@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Londrina+Sketch&family=Monofett&family=Nova+Script&family=Rock+3D&family=Sedgwick+Ave+Display&family=Swanky+and+Moo+Moo&display=swap");
+
+/* font-family: 'Bungee Shade', cursive;
+font-family: 'Libre Barcode 128 Text', cursive;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Liu Jian Mao Cao', cursive;
+font-family: 'Londrina Outline', cursive;
+font-family: 'Londrina Sketch', cursive;
+font-family: 'Monofett', cursive;
+font-family: 'Nova Script', cursive;
+font-family: 'Rock 3D', cursive;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Swanky and Moo Moo', cursive; */
+
+.header {
+  /* font-family: "Nova Script", cursive; */
+  font-family: "Londrina Sketch", cursive;
+  /* font-family: "Swanky and Moo Moo", cursive; */
+  /* font-family: "Londrina Outline", cursive; */
+  /* font-family: "Rock 3D", cursive; */
+  font-size: 2rem;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid black;
+  border-top: none;
+  padding: 10px;
+  letter-spacing: 0.55rem;
+}
+
+.topNavs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 5px;
+}
+
+.bottomNavs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 5px;
+}
+
+.navText {
+  padding: 5px;
+}
+
+.navLeft {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  padding: 5px;
+}
+
+.navRight {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  padding: 5px;
+}
+
+.navBottomLeft {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  padding: 5px;
+}
+
+.navBottomRight {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  padding: 5px;
+}
+
+.navBottomMiddle {
+  padding: 5px;
+}
+
+.navBottomMiddle {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  padding: 5px;
+}
