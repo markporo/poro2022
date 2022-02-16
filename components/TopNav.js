@@ -1,4 +1,4 @@
-import { header, topNavs, navLeft, navRight, navText } from "../styles/Nav.module.css"
+import { header, topNavs, navLeft, navRight, navText } from "../styles/Nav.module.scss"
 import Link from "next/link";
 
 

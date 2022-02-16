@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Londrina+Sketch&family=Monofett&family=Nova+Script&family=Rock+3D&family=Sedgwick+Ave+Display&family=Swanky+and+Moo+Moo&display=swap");
+
+/* font-family: 'Bungee Shade', cursive;
+font-family: 'Libre Barcode 128 Text', cursive;
+font-family: 'Libre Barcode 39 Text', cursive;
+font-family: 'Liu Jian Mao Cao', cursive;
+font-family: 'Londrina Outline', cursive;
+font-family: 'Londrina Sketch', cursive;
+font-family: 'Monofett', cursive;
+font-family: 'Nova Script', cursive;
+font-family: 'Rock 3D', cursive;
+font-family: 'Sedgwick Ave Display', cursive;
+font-family: 'Swanky and Moo Moo', cursive; */
+
+
+//scss variables
+$primary-blue: rgba(48, 130, 165, 0.582);
+$primary-dark-blue: rgba(34, 86, 109, 0.63);
+$primary-yellow: #dcb87981;
+$primary-red: #a860707a;
+$primary-white: #fbfbef;
+$primary-darkish: #6c6a82;
+
+$main-font-family: "Londrina Sketch", cursive;
+
+
+// mixins
+@mixin selectedPage {
+  font-size: 1.5rem;
+  border-width: 2px;
+  background-color: $primary-blue;
+;
+  border: 2.5px solid black;
+}
+
+@mixin hoverNavLink {
+  font-size: 1.5rem;
+  border-width: 2px;
+  background-color: $primary-yellow;
+}
+
+@mixin transitionAnimation {
+  transition-duration: .3s;
+  transition-property: all; // what is being effected by transition-duration
+  transition-delay: .15s;
+  transition-timing-function: ease-in-out;
+}
+
+@mixin bothBotAndTopNavs {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: $main-font-family;
+  letter-spacing: .2em;
+  font-weight: bolder;
+}
+
+@mixin textAndNavs {
+  padding: 5px;
+  @include transitionAnimation()
+}
+
+
+
+// INCLUDES 
+.navLeft:focus-within, .navRight:focus-within, .navBottomLeft:focus-within, .navBottomMiddle:focus-within, .navBottomRight:focus-within {
+  @include selectedPage;
+}
+
+.navLeft:hover, .navRight:hover, .navBottomLeft:hover, .navBottomMiddle:hover, .navBottomRight:hover {
+  @include hoverNavLink;
+}
+
+.topNavs {
+  @include bothBotAndTopNavs;
+  @include textAndNavs;
+}
+
+.bottomNavs {
+  @include bothBotAndTopNavs;
+  @include textAndNavs;
+}
+
+.navText {
+  @include textAndNavs;
+}
+
+.navLeft {
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  @include textAndNavs;
+}
+
+
+.navRight {
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  @include textAndNavs;
+}
+
+.navBottomLeft {
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  @include textAndNavs;
+}
+
+.navBottomRight {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  @include textAndNavs;
+}
+
+.navBottomMiddle {
+  @include textAndNavs;
+}
+
+.navBottomMiddle {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  @include textAndNavs;
+}
+
+
+// individual CSS items
+.header {
+  /* font-family: "Nova Script", cursive; */
+  /* font-family: "Swanky and Moo Moo", cursive; */
+  // font-family: "Londrina Outline", cursive; 
+  /* font-family: "Rock 3D", cursive; */
+  font-family: $main-font-family;
+  font-size: 2rem;
+  margin: 0 auto;
+  position: relative;
+  border: 2px solid black;
+  border-top: none;
+  padding: 10px;
+  letter-spacing: 0.55rem;
+  @include transitionAnimation
+}
+
+.header:hover {
+  font-size: 2.5rem;
+  border: 2.5px solid black;
+  @include transitionAnimation;
+  background-color: $primary-yellow;
+}
+
+.header:focus-within {
+  font-size: 2.5rem;
+  border: 2.5px solid black;
+  background-color: $primary-blue;
+}
+
+
+// what should be transitioned?
+// transform: translate()
+//transform: scale()
+//transform: rotate()
+// opacity
+//----go back and change out font size and border with transform: scale()
+// ---these take up the least amount of cpu processing
+
+// transform: translatex(100px) translatey(10px) or just translate(15px) moves elements across screen
