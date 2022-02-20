@@ -1,27 +1,39 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import ArticleList from '../components/ArticleList'
+import { sun, indexContainer, poroCurrentLogo, pageContainer, earth } from '../styles/index.module.scss'
 
 export default function Home({ articles }) {
   return (
-    <div>
+    <div className={pageContainer}>
       <Head>
         <title>Poro</title>
         <meta name='keywords' content='poro, music, poromusic, dance with me, moonlight, porostosky' />
       </Head>
-      <h1>PORO MAIN PAGE</h1>
-      <ArticleList articles={articles} />
+      {/* <h1>PORO MAIN PAGE</h1> */}
+      <div className={indexContainer}>
+        <div className={sun}></div>
+        {/* <Image className={poroCurrentLogo} alt="for the rest of our lives graphic" src='/../public/images/For the rest of our lives - old couple1-cutout.png' width="100%" height="100%" layout='intrinsic'></Image> */}
+        <div className={earth}></div>
+      </div>
+
+
     </div>
   )
 }
 
-export const getStaticProps = async () => {
-  const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
-  const articles = await res.json()
 
-  return {
-    props: {
-      articles
-    }
-  }
-}
+
+
+
+
+
+// export const getStaticProps = async () => {
+//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
+//   const articles = await res.json()
+
+//   return {
+//     props: {
+//       articles
+//     }
+//   }
+// }

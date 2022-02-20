@@ -1,14 +1,14 @@
-import Head from 'next/head'
+import Meta from '../components/Meta'
 import Image from 'next/image'
+import Releases from '../components/Releases'
+import { width85, box } from '../styles/pages.module.scss'
+import { vinyl } from '../styles/Listen.module.scss'
 
 export default function listen() {
     return (
-        <div>
-            <Head>
-                <title>Poro</title>
-                <meta name='keywords' content='poro, music, music, listen, hear poro music, poromusic, dance with me, moonlight, porostosky' />
-            </Head>
-            <h1>Listen</h1>
+        <div className={width85}>
+            <Meta title='Listen' />
+            <Releases></Releases>
         </div>
     )
 }

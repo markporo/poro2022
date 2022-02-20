@@ -1,0 +1,27 @@
+@mixin rotate {
+    animation: rotating;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.vinyl {
+  display: block;
+  width: 200px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.rotate {
+    @include rotate;
+}
+
+
+@keyframes rotating {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}

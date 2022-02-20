@@ -1,0 +1,50 @@
+
+//scss variables
+$primary-blue: #1c658c50;
+$primary-dark-blue: rgba(34, 89, 112, 0.534);
+$primary-yellow: #dcb87981;
+$primary-red: #a860707a;
+$primary-white: #fbfbef;
+$primary-darkish: #6c6a82;
+
+$main-font-family: "Londrina Sketch", cursive;
+
+@mixin transitionAnimation {
+    transition-duration: .2s;
+    transition-property: all; // what is being effected by transition-duration
+    transition-delay: .05s;
+    transition-timing-function: ease-in-out;
+  }
+
+.width85 {
+    
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* height: 80vh; */
+    
+}
+
+/* might need to make parent elements overflow hidden if flex items need scrolling */
+
+.buttons {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid black;
+    @include transitionAnimation;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons:hover {
+    background-color: $primary-blue;
+    transform: scale(1.05);
+    transform: translateY(-2px);
+    box-shadow: 0px 3px 7px $primary-dark-blue;
+}
+

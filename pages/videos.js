@@ -1,14 +1,11 @@
-import Head from 'next/head'
+import Meta from '../components/Meta'
 import Image from 'next/image'
 
 
 export default function videos() {
     return (
         <div>
-            <Head>
-                <title>Poro</title>
-                <meta name='keywords' content='poro, music, music videos, videos, dancing, poromusic, dance with me, moonlight, porostosky' />
-            </Head>
+            <Meta title="Poro Music Videos" />
             <h1>Watch Poro Music</h1>
         </div>
     )
