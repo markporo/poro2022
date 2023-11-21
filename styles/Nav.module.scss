@@ -12,23 +12,56 @@ font-family: 'Rock 3D', cursive;
 font-family: 'Sedgwick Ave Display', cursive;
 font-family: 'Swanky and Moo Moo', cursive; */
 
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Chathura&family=Comforter+Brush&family=East+Sea+Dokdo&family=Grape+Nuts&family=Kite+One&family=Loved+by+the+King&family=Major+Mono+Display&family=Nanum+Brush+Script&family=Nanum+Pen+Script&family=Reenie+Beanie&family=Solitreo&family=Stick&family=Swanky+and+Moo+Moo&family=Wire+One&family=Zeyada&display=swap');
+
+// font-family: 'Bungee Outline', cursive; // 
+// font-family: 'Chathura', sans-serif;
+// font-family: 'Comforter Brush', cursive;
+// font-family: 'East Sea Dokdo', cursive;
+// font-family: 'Grape Nuts', cursive;
+// font-family: 'Kite One', sans-serif;
+// font-family: 'Loved by the King', cursive;
+// font-family: 'Major Mono Display', monospace; // **
+// font-family: 'Nanum Brush Script', cursive;
+// font-family: 'Nanum Pen Script', cursive; //**
+// font-family: 'Reenie Beanie', cursive; // **
+// font-family: 'Solitreo', cursive;
+// font-family: 'Stick', sans-serif;
+// font-family: 'Swanky and Moo Moo', cursive; // **
+// font-family: 'Wire One', sans-serif;
+// font-family: 'Zeyada', cursive;
+
 
 //scss variables
 $primary-blue: #1c658c50;
+$primary-blue-50-percent: #1c658c20;
 $primary-dark-blue: rgba(34, 86, 109, 0.63);
 $primary-yellow: #dcb87981;
 $primary-red: #a860707a;
 $primary-white: #fbfbef;
 $primary-darkish: #6c6a82;
 
-$main-font-family: "Londrina Sketch", cursive;
+// $main-font-family: "Londrina Sketch", cursive;
+$main-font-family: 'Nanum Pen Script', cursive;
+
+// 2023 polaroid colors
+$poro-green: #89ab9686;
+$poro-blue: #5F849D;
+$poro-yellow: #e7c3807e;
+$poro-red: #d071717e;
+
+// 2023 polaroid colors 50%
+$poro-green-50-percent: #89ab9630;
+$poro-blue-50-percent: #5f849d5d;
+$poro-yellow-50-percent: #e7c3803b;
+$poro-red-50-percent: #d071712c;
 
 
 // mixins
-@mixin selectedPage {
+@mixin selectedPage ($color) {
   font-size: 1.5rem;
   border-width: 2px;
-  background-color: $primary-blue;
+  background-color: $color;
 ;
   border: 2.5px solid black;
 }
@@ -70,8 +103,28 @@ $main-font-family: "Londrina Sketch", cursive;
 
 
 // INCLUDES 
-.navLeft:focus-within, .navRight:focus-within, .navBottomLeft:focus-within, .navBottomMiddle:focus-within, .navBottomRight:focus-within {
-  @include selectedPage;
+.navLeft:focus-within {
+  @include selectedPage ($primary-blue);
+}
+
+// .navLeft:not(:focus-within) { // could use this if...maybe
+//   background-color: $primary-yellow;
+// }
+
+.navRight:focus-within {
+  @include selectedPage ($poro-green);
+}
+
+.navBottomLeft:focus-within {
+  @include selectedPage ($poro-green);
+}
+
+.navBottomMiddle:focus-within {
+  @include selectedPage ($poro-red);
+}
+
+.navBottomRight:focus-within {
+  @include selectedPage ($primary-blue);
 }
 
 .navLeft:hover, .navRight:hover, .navBottomLeft:hover, .navBottomMiddle:hover, .navBottomRight:hover {
@@ -97,6 +150,7 @@ $main-font-family: "Londrina Sketch", cursive;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   @include textAndNavs;
+  background-color: $primary-blue-50-percent;
 }
 
 
@@ -104,22 +158,26 @@ $main-font-family: "Londrina Sketch", cursive;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   @include textAndNavs;
+  background-color: $poro-green-50-percent;
 }
 
 .navBottomLeft {
   border-top: 1px solid black;
   border-right: 1px solid black;
   @include textAndNavs;
+  background-color: $poro-green-50-percent;
 }
 
 .navBottomRight {
   border-top: 1px solid black;
   border-left: 1px solid black;
   @include textAndNavs;
+  background-color: $primary-blue-50-percent;
 }
 
 .navBottomMiddle {
   @include textAndNavs;
+  background-color: $poro-red-50-percent;
 }
 
 .navBottomMiddle {
@@ -145,6 +203,12 @@ $main-font-family: "Londrina Sketch", cursive;
   padding: 10px;
   letter-spacing: 0.55rem;
   @include transitionAnimation;
+  background-color: $poro-yellow-50-percent;
+
+  @media (max-width: 320px) {
+    font-size: 1.5rem;
+    padding: 5px;
+  }
 }
 
 .header:hover {
@@ -157,7 +221,7 @@ $main-font-family: "Londrina Sketch", cursive;
 .header:focus-within {
   font-size: 2.5rem;
   border: 2.5px solid black;
-  background-color: $primary-blue;
+  @include selectedPage($poro-yellow)
 }
 
 

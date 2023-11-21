@@ -8,9 +8,9 @@ function TopNav() {
             <div className={navLeft}>
                 <Link href='/listen'>Listen</Link>
             </div>
-            <div><h1 className={header}> <Link href='/'>Poro</Link></h1></div>
+            <div><h1 className={header}> <Link href='/'>Mash Bash</Link></h1></div>
             <div className={navRight}>
-                <Link href='/follow'>Connect</Link>
+                <Link href='/follow'>Follow</Link>
             </div>
         </nav>
     )

@@ -17,14 +17,13 @@ $main-font-family: "Londrina Sketch", cursive;
   }
 
 .width85 {
-    
-    max-width: 600px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     /* height: 80vh; */
-    
+    height: auto;
+    width: 100%;    
 }
 
 /* might need to make parent elements overflow hidden if flex items need scrolling */

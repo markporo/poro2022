@@ -10,19 +10,19 @@ export default function Home({ articles }) {
         <meta name='keywords' content='poro, music, poromusic, dance with me, moonlight, porostosky' />
       </Head>
       {/* <h1>PORO MAIN PAGE</h1> */}
-      <div className={indexContainer}>
-        <div className={sun}></div>
-        {/* <Image className={poroCurrentLogo} alt="for the rest of our lives graphic" src='/../public/images/For the rest of our lives - old couple1-cutout.png' width="100%" height="100%" layout='intrinsic'></Image> */}
-        <div className={earth}></div>
-      </div>
 
-
+      {/* Animation of Sun moving that I probably won't use */}
+         {/* <div className={indexContainer}> */}
+           {/* <div className={sun}></div> */}
+           {/* <Image className={poroCurrentLogo} alt="for the rest of our lives graphic" src='/../public/images/For the rest of our lives - old couple1-cutout.png' width="100%" height="100%" layout='intrinsic'></Image> */}
+           {/* <div className={earth}></div> */}
+         {/* </div> */}
     </div>
   )
 }
 
 
-
+// #047E89 - greenish color -try on body
 
 
 
