@@ -8,6 +8,8 @@ export default function Home({ articles }) {
       <Head>
         <title>Poro</title>
         <meta name='keywords' content='poro, music, poromusic, dance with me, moonlight, porostosky' />
+        {/* Facebook Business Domain Verification*/}
+        <meta name="facebook-domain-verification" content="4ky5otzrrc7cn5w4kxcu2lk7g4lbja" />
       </Head>
       {/* <h1>PORO MAIN PAGE</h1> */}
 
