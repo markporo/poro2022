@@ -1,6 +1,6 @@
 import React from 'react';
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import SongTitle from '../components/SongReleaseTitle';
 import { indexContentContainer, indexPageContainerSingleSquare, pageContainer, homePageImage, homePageText, noWrap, presave, color3, color2, color1 } from '../styles/index.module.scss'
 
