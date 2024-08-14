@@ -1,3 +1,4 @@
+// Mixins
 @mixin shakeOnHover {
   animation: shake 0.5s;
   animation-iteration-count: infinite;
@@ -5,122 +6,75 @@
   border: 4px solid black;
 }
 
-.flexPlaylists {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: space-around;
-  // align-content: space-evenly;
-  box-sizing: border-box;
-  margin-left: -50%;
-  width: 100%;
-  max-height: 300px;
-
-  @media (max-width: 500px) {
-    margin-left: -27.5%;
-  }
-}
-
 .columnWrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   overflow: auto;
-  // border: 2px solid black;
   width: 100%;
-  max-width: 900px;
-  padding: 15px 0;
-  position: relative;
-  max-height: 75vh;
-  overflow: auto;
-}
+  max-height: 67vh;
 
-.previousReleasesWrapper {
-  width: 100%;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-evenly;
-  align-content: center;
+  .featureRelease {
+    width: 46%;
+    min-width: 100px;
+    display: block;
+    margin: auto;
+    position: relative;
+    height: auto;
 
-  @media (min-width: 840px) {
-    width: 50%;
-    // max-width: 380px;
+    @media (max-width: 840px) {
+      width: 50%;
+    }
+
+    @media (max-width: 400px) {
+      width: 85%;
+      margin: 20px 0 40px 0;
+    }
+  }
+
+  .featureRelease:hover {
+    @include shakeOnHover;
+  }
+
+  .previousReleasesWrapper {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+
+    @media (min-width: 840px) {
+      width: 50%;
+    }
+
+    .image {
+      box-sizing: border-box;
+      min-width: 50px;
+      display: block;
+      flex-basis: 42%;
+      position: relative;
+      height: auto;
+
+      @media (max-width: 840px) {
+        flex-basis: 38%;
+      }
+
+      @media (max-width: 400px) {
+        flex-basis: 70%;
+      }
+
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .image:hover {
+      @include shakeOnHover;
+    }
   }
 }
 
-.featureRelease {
-  box-sizing: border-box;
-  width: 46%;
-  min-width: 100px;
-  display: block;
-  margin: auto;
-
-  @media (max-width: 840px) {
-    width: 50%;
-  }
-
-  @media (max-width: 400px) {
-    width: 85%;
-    margin: 20px 0 40px 0;
-  }
-
- 
-}
-
-.featureRelease:hover {
-  @include shakeOnHover;
-}
-
-.image {
-  box-sizing: border-box;
-  // width: 15%;
-  min-width: 50px;
-  margin: 2%;
-  display: block;
-  flex-basis: 42%;
-  
-  
-
-  @media (max-width: 840px) {
-    flex-basis: 38%;
-  }
-
-  @media (max-width: 400px) {
-    flex-basis: 70%;
-  }
-}
-
-.image:hover {
-  @include shakeOnHover;
-}
-
-.playlist {
-  @media (max-width: 500px) {
-    width: 55%;
-    margin: 0 auto;
-
-  }
-
-
-  .mbLess {
-    margin-bottom: -50px;
-  }
-
-}
-
-.singleLine {
-  background-color: black;
-  min-width: 200px;
-  height: 1px;
-  // margin-top: -15px;
-  display: block;
-  width: 100%;
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-
-.h3 {
-  text-align: center;
-}
 
 //keyframe animations
 @keyframes shake {

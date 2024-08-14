@@ -2,12 +2,15 @@ import TopNav from './TopNav'
 import BottomNav from './BottomNav'
 import styles from '../styles/Layout.module.css'
 import Meta from './Meta'
+import MobileLogo from './MobileLogo'
+import {mobileLogoStyles} from '../styles/Logo.module.scss'
 
 
-const Layout = ({ children }) => {
-    return (
+const Layout = ({ children, title, description, additionalMeta, keywords }) => {
+    return ( 
         <div className={styles.container}>
-            <Meta />
+            <Meta title={title} description={description} keywords ={keywords} additionalMeta={additionalMeta} />
+            <MobileLogo></MobileLogo>
             <TopNav></TopNav>
             <main className={styles.main}>
                 {children}

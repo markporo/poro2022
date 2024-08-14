@@ -1,5 +1,6 @@
-import { header, topNavs, navLeft, navRight, navText } from "../styles/Nav.module.scss"
+import {topNavs, navLeft, navRight, navText } from "../styles/Nav.module.scss"
 import Link from "next/link";
+import Logo from '../components/Logo';
 
 
 function TopNav() {
@@ -8,13 +9,12 @@ function TopNav() {
             <div className={navLeft}>
                 <Link href='/listen'>Listen</Link>
             </div>
-            <div><h1 className={header}> <Link href='/'>Mash Bash</Link></h1></div>
+            <Logo></Logo>
             <div className={navRight}>
                 <Link href='/follow'>Follow</Link>
             </div>
         </nav>
     )
-
 }
 
 export default TopNav;

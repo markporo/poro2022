@@ -1,11 +1,14 @@
-import Meta from '../components/Meta'
+import Head from 'next/head'
 import Image from 'next/image'
 
 
 export default function store() {
     return (
         <div>
-            <Meta title='Poro Merch Store' />
+            <Head>
+                <title>PORO STORE</title>
+                <meta name='keywords' content='poro, shop, store, Poro Merch, Merchandise, merch' />
+            </Head>
             <h1>Poro Store</h1>
         </div>
     )

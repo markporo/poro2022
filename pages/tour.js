@@ -1,11 +1,14 @@
-import Meta from '../components/Meta'
+import Head from 'next/head'
 import Image from 'next/image'
 import { vinyl, rotate } from '../styles/Tour.module.scss'
 
 export default function tour() {
     return (
         <div>
-            <Meta title="Poro Tour Dates" />
+            <Head>
+                <title>TOUR</title>
+                <meta name='keywords' content='poro, shows, tour, tour dates, dates' />
+            </Head>
             <h1>Upcoming Shows</h1>
 
             <div className={vinyl}>

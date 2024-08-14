@@ -1,5 +1,7 @@
-import Layout from '../components/Layout'
-import styles from '../styles/globals.css'
+import Layout from '../components/Layout';
+import "../lib/fontawesome";
+import '../styles/globals.css';
+import '../styles/fonts.scss';
 
 
 // wrap a layout around component 
@@ -9,7 +11,7 @@ import styles from '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout>
+    <Layout title={pageProps.title} description={pageProps.description} keywords={pageProps.keywords} additionalMeta={pageProps.additionalMeta}>
       <Component {...pageProps} />
     </Layout>
   )

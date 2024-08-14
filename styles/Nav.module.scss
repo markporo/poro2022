@@ -1,36 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Libre+Barcode+128+Text&family=Libre+Barcode+39+Text&family=Liu+Jian+Mao+Cao&family=Londrina+Outline&family=Londrina+Sketch&family=Monofett&family=Nova+Script&family=Rock+3D&family=Sedgwick+Ave+Display&family=Swanky+and+Moo+Moo&display=swap");
 
-/* font-family: 'Bungee Shade', cursive;
-font-family: 'Libre Barcode 128 Text', cursive;
-font-family: 'Libre Barcode 39 Text', cursive;
-font-family: 'Liu Jian Mao Cao', cursive;
-font-family: 'Londrina Outline', cursive;
-font-family: 'Londrina Sketch', cursive;
-font-family: 'Monofett', cursive;
-font-family: 'Nova Script', cursive;
-font-family: 'Rock 3D', cursive;
-font-family: 'Sedgwick Ave Display', cursive;
-font-family: 'Swanky and Moo Moo', cursive; */
-
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Chathura&family=Comforter+Brush&family=East+Sea+Dokdo&family=Grape+Nuts&family=Kite+One&family=Loved+by+the+King&family=Major+Mono+Display&family=Nanum+Brush+Script&family=Nanum+Pen+Script&family=Reenie+Beanie&family=Solitreo&family=Stick&family=Swanky+and+Moo+Moo&family=Wire+One&family=Zeyada&display=swap');
-
-// font-family: 'Bungee Outline', cursive; // 
-// font-family: 'Chathura', sans-serif;
-// font-family: 'Comforter Brush', cursive;
-// font-family: 'East Sea Dokdo', cursive;
-// font-family: 'Grape Nuts', cursive;
-// font-family: 'Kite One', sans-serif;
-// font-family: 'Loved by the King', cursive;
-// font-family: 'Major Mono Display', monospace; // **
-// font-family: 'Nanum Brush Script', cursive;
-// font-family: 'Nanum Pen Script', cursive; //**
-// font-family: 'Reenie Beanie', cursive; // **
-// font-family: 'Solitreo', cursive;
-// font-family: 'Stick', sans-serif;
-// font-family: 'Swanky and Moo Moo', cursive; // **
-// font-family: 'Wire One', sans-serif;
-// font-family: 'Zeyada', cursive;
-
+// @import '/variables.scss';
 
 //scss variables
 $primary-blue: #1c658c50;
@@ -42,20 +11,19 @@ $primary-white: #fbfbef;
 $primary-darkish: #6c6a82;
 
 // $main-font-family: "Londrina Sketch", cursive;
-$main-font-family: 'Nanum Pen Script', cursive;
+$main-font-family: 'Poppins-ExtraLight', cursive;
 
 // 2023 polaroid colors
 $poro-green: #89ab9686;
-$poro-blue: #5F849D;
+$poro-blue: #78a8c8;  // 5F849D
 $poro-yellow: #e7c3807e;
 $poro-red: #d071717e;
 
 // 2023 polaroid colors 50%
 $poro-green-50-percent: #89ab9630;
-$poro-blue-50-percent: #5f849d5d;
+$poro-blue-50-percent: #78a8c89b;
 $poro-yellow-50-percent: #e7c3803b;
 $poro-red-50-percent: #d071712c;
-
 
 // mixins
 @mixin selectedPage ($color) {
@@ -69,7 +37,6 @@ $poro-red-50-percent: #d071712c;
 @mixin hoverNavLink {
   font-size: 1.5rem;
   border-width: 2px;
-  // background-color: $primary-red;
 }
 
 @mixin transitionAnimation {
@@ -100,31 +67,25 @@ $poro-red-50-percent: #d071712c;
 }
 
 
-
-
 // INCLUDES 
 .navLeft:focus-within {
-  @include selectedPage ($primary-blue);
+  @include selectedPage ($poro-green-50-percent);
 }
 
-// .navLeft:not(:focus-within) { // could use this if...maybe
-//   background-color: $primary-yellow;
-// }
-
 .navRight:focus-within {
-  @include selectedPage ($poro-green);
+  @include selectedPage ($poro-yellow-50-percent);
 }
 
 .navBottomLeft:focus-within {
-  @include selectedPage ($poro-green);
+  @include selectedPage ($poro-blue-50-percent);
 }
 
 .navBottomMiddle:focus-within {
-  @include selectedPage ($poro-red);
+  @include selectedPage ($poro-red-50-percent);
 }
 
 .navBottomRight:focus-within {
-  @include selectedPage ($primary-blue);
+  @include selectedPage ($poro-red-50-percent);
 }
 
 .navLeft:hover, .navRight:hover, .navBottomLeft:hover, .navBottomMiddle:hover, .navBottomRight:hover {
@@ -150,7 +111,7 @@ $poro-red-50-percent: #d071712c;
   border-bottom: 1px solid black;
   border-right: 1px solid black;
   @include textAndNavs;
-  background-color: $primary-blue-50-percent;
+  background-color: $poro-green;
 }
 
 
@@ -158,26 +119,26 @@ $poro-red-50-percent: #d071712c;
   border-bottom: 1px solid black;
   border-left: 1px solid black;
   @include textAndNavs;
-  background-color: $poro-green-50-percent;
+  background-color: $poro-yellow;
 }
 
 .navBottomLeft {
   border-top: 1px solid black;
   border-right: 1px solid black;
   @include textAndNavs;
-  background-color: $poro-green-50-percent;
+  background-color: $poro-blue;
 }
 
 .navBottomRight {
   border-top: 1px solid black;
   border-left: 1px solid black;
   @include textAndNavs;
-  background-color: $primary-blue-50-percent;
+  background-color: $primary-red;
 }
 
 .navBottomMiddle {
   @include textAndNavs;
-  background-color: $poro-red-50-percent;
+  background-color: $poro-red;
 }
 
 .navBottomMiddle {
@@ -188,40 +149,60 @@ $poro-red-50-percent: #d071712c;
 }
 
 
-// individual CSS items
+// HEADER FOR BOTH MOBILE AND DESKTOP
 .header {
-  /* font-family: "Nova Script", cursive; */
-  /* font-family: "Swanky and Moo Moo", cursive; */
-  // font-family: "Londrina Outline", cursive; 
-  /* font-family: "Rock 3D", cursive; */
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
   font-family: $main-font-family;
   font-size: 2rem;
   margin: 0 auto;
   position: relative;
   border: 2px solid black;
   border-top: none;
-  padding: 10px;
+  padding: 0 5px 5px 5px;
   letter-spacing: 0.55rem;
   @include transitionAnimation;
-  background-color: $poro-yellow-50-percent;
 
-  @media (max-width: 320px) {
+  @media (max-width: 767px) {
+    margin: 0;
+    border: 0;
+    border-bottom: 1px solid black;
+    padding: 0;
+    letter-spacing: 0.85rem;
     font-size: 1.5rem;
     padding: 5px;
   }
+}
+
+.header h1 {
+  margin: -15px auto -18px auto;
+  padding: 0;
+  text-align: center;
+  padding-left: 5px;
 }
 
 .header:hover {
   font-size: 2.5rem;
   border: 2.5px solid black;
   @include transitionAnimation;
-  @include shakeOnHover()
+  @include shakeOnHover();
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    border: 1px solid black;
+  }
 }
 
 .header:focus-within {
   font-size: 2.5rem;
   border: 2.5px solid black;
-  @include selectedPage($poro-yellow)
+  @include selectedPage($poro-yellow-50-percent);
+
+  @media (max-width: 767px) {
+    font-size: 1.6rem;
+    border: 1px solid black;
+  }
 }
 
 

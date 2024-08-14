@@ -1,41 +1,36 @@
+import React from 'react';
 import Head from 'next/head'
 import Image from 'next/image'
-import { sun, indexContainer, poroCurrentLogo, pageContainer, earth } from '../styles/index.module.scss'
+import SongTitle from '../components/SongReleaseTitle';
+import { indexContentContainer, indexPageContainerSingleSquare, pageContainer, homePageImage, homePageText, noWrap, presave, color3, color2, color1 } from '../styles/index.module.scss'
 
 export default function Home({ articles }) {
   return (
     <div className={pageContainer}>
       <Head>
         <title>Poro</title>
-        <meta name='keywords' content='poro, music, poromusic, dance with me, moonlight, porostosky' />
-        {/* Facebook Business Domain Verification*/}
-        <meta name="facebook-domain-verification" content="4ky5otzrrc7cn5w4kxcu2lk7g4lbja" />
+        <meta name='keywords' content='poro, Cleveland OHIO, poromusic, dance with me, moonlight, porostosky' />
       </Head>
-      {/* <h1>PORO MAIN PAGE</h1> */}
-
-      {/* Animation of Sun moving that I probably won't use */}
-         {/* <div className={indexContainer}> */}
-           {/* <div className={sun}></div> */}
-           {/* <Image className={poroCurrentLogo} alt="for the rest of our lives graphic" src='/../public/images/For the rest of our lives - old couple1-cutout.png' width="100%" height="100%" layout='intrinsic'></Image> */}
-           {/* <div className={earth}></div> */}
-         {/* </div> */}
+      <div className={indexContentContainer}>
+        <div className={homePageImage}>
+          <a href="https://hypeddit.com/iuiue5" target="_blank" rel="noopener noreferrer">
+            <Image className={indexPageContainerSingleSquare} alt="Dance With Me Album Cover" src="/images/DWM-album-cover.jpg" width={1000} height={1000} layout="responsive"></Image>
+          </a>
+        </div>
+        <div className={homePageText}>
+          <SongTitle></SongTitle>
+          {/* <h1>Dance <span className={noWrap}>With Me</span></h1> */}
+          {/* <h1><span className={color1}>Dance</span> <span className={noWrap}><span className={color2}>With</span> <span className={color3}>Me</span></span></h1> */}
+          <h6>Releasing on <span className={noWrap}>8-16-24!</span></h6>
+          {/* listen link/ presave link */}
+          <a href="https://hypeddit.com/iuiue5" target="_blank" rel="noopener noreferrer">
+            <h4 className={presave}>Click To Presave!</h4>
+          </a>
+        </div>
+      </div>
     </div>
   )
 }
 
+// #047E89 - greenish color -try on body -- maybe #d4fbff
 
-// #047E89 - greenish color -try on body
-
-
-
-
-// export const getStaticProps = async () => {
-//   const res = await fetch(`https://jsonplaceholder.typicode.com/posts?_limit=6`)
-//   const articles = await res.json()
-
-//   return {
-//     props: {
-//       articles
-//     }
-//   }
-// }

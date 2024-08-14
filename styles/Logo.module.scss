@@ -1,0 +1,43 @@
+// 2023 polaroid colors
+$poro-green: #89ab9686;
+$poro-blue: #78a8c8; //#5F849D;
+$poro-yellow: #e7c3807e;
+$poro-red: #d071717e;
+  
+  .line {
+    height: 8px;
+    margin-top: 2px;
+    width: 100%;
+    background-color: $poro-blue; 
+  }
+  
+  .line:nth-child(2) {
+    background-color: $poro-green; 
+    
+  }
+  
+  .line:nth-child(3) {
+    background-color: $poro-yellow; 
+  }
+  
+  .line:nth-child(4) {
+    background-color: $poro-red;
+  }
+  
+  // .line:nth-child(5) {
+  //   background-color: #92278f; 
+  // }
+
+  .desktopLogoStyles {
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+  
+  .mobileLogoStyles {
+    display: none;
+
+    @media screen and (max-width: 767px) {
+      display: flex;
+    }
+  }

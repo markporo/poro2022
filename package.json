@@ -8,14 +8,18 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "axios": "^0.26.0",
-    "next": "12.0.10",
-    "react": "17.0.2",
-    "react-dom": "17.0.2",
-    "sass": "^1.49.7"
+    "@fortawesome/fontawesome-svg-core": "^6.6.0",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.6.0",
+    "@fortawesome/react-fontawesome": "^0.2.2",
+    "axios": "^1.7.4",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sass": "^1.77.8"
   },
   "devDependencies": {
-    "eslint": "8.9.0",
-    "eslint-config-next": "12.0.10"
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.5"
   }
 }
