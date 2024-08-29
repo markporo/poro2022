@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/link-passhref */
+
 import styles from '../styles/Logo.module.scss';
 import { header } from "../styles/Nav.module.scss"
 import Link from 'next/link';
