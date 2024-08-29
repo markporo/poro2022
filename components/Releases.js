@@ -1,28 +1,56 @@
-import Image from 'next/image'
+import Image from "next/legacy/image"
 import listenStyles from '../styles/Listen.module.scss'
-import Link from 'next/link'
+import releases from '../data/releases'
+import Socials from "./Socials";
+
+
+
+const PreviousReleases = releases.slice(1, 5).map((release, i) => (
+    <div key={i} className={listenStyles.image}>
+        <a href={release.link} target="_blank" rel="noopener noreferrer">
+            <Image
+                src={release.src}
+                alt={release.alt}
+                layout='responsive'
+                width={parseInt(release.width, 10)}
+                height={parseInt(release.height, 10)}
+            />
+        </a>
+    </div>
+));
+
+const PreviousOlderReleases = releases.slice(5).map((release, i) => (
+    <div key={i} className={listenStyles.image}>
+        <a href={release.link} target="_blank" rel="noopener noreferrer">
+            <Image
+                src={release.src}
+                alt={release.alt}
+                layout='responsive'
+                width={parseInt(release.width, 10)}
+                height={parseInt(release.height, 10)}
+            />
+        </a>
+    </div>
+));
 
 
 export default function Releases() {
     return (
         <div className={listenStyles.columnWrapper}>
-            <div className={listenStyles.featureRelease}>
-                <Image src='/images/tinified/Favorite Number Remix - Album Art -3000.jpg' alt='Favorite Number Remix' layout='responsive' width={500} height={500}></Image>
+            <div className={listenStyles.featureReleaseWrapper}>
+                <div className={listenStyles.featureRelease}>
+                    <a href={releases[0].link} target="_blank" rel="noopener noreferrer">
+                        <Image key='first and feature image' src={releases[0].src} alt={releases[0].alt} layout='responsive' priority width={releases[0].width} height={releases[0].height}></Image>
+                    </a>
+                </div>
             </div>
             <div className={listenStyles.previousReleasesWrapper}>
-                <div className={listenStyles.image}>
-                    <Image src='/images/tinified/treat-yourself.jpg' alt='Favorite Number Remix' layout='responsive' width={300} height={300}></Image>
-                </div>
-                <div className={listenStyles.image}>
-                    <Image src='/images/WAY-BACK-(Single) - bw - under 5mb.jpg' alt='Favorite Number Remix' layout='responsive' width={300} height={300}></Image>
-                </div>
-                <div className={listenStyles.image}>
-                    <Image src='/images/legacyporo - 3.8mb.jpg' alt='Legacy Poro Tunes' layout='responsive' width={300} height={300}></Image>
-                </div>
-                <div className={listenStyles.image}>
-                    <Image src='/images/tinified/poro remix square.jpg' alt='Favorite Number Remix' layout='responsive' width={300} height={300}></Image>
-                </div>
+                {PreviousReleases}
             </div>
+            <div className={listenStyles.previousReleasesWrapperTwo}>
+                {PreviousOlderReleases}
+            </div>
+            <Socials />
         </div>
     )
 }

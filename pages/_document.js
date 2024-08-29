@@ -7,12 +7,6 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     {/* I am using a custom meta.js for global meta */}
-                    {/* Add the MailerLite script here */}
-                    {/* <script
-                        src="https://groot.mailerlite.com/js/w/webforms.min.js?v2d8fb22bb5b3677f161552cd9e774127"
-                        type="text/javascript"
-                        async
-                    ></script> */}
                 </Head>
                 <body>
                     {/* <!-- Google Tag Manager (noscript) --> */}
@@ -27,17 +21,6 @@ class MyDocument extends Document {
                     {/* <!-- End Google Tag Manager (noscript) --> */}
                     <Main />
                     <NextScript />
-                    {/* <script
-                        dangerouslySetInnerHTML={{
-                            __html: `
-                function ml_webform_success_17102286() {
-                  var $ = ml_jQuery || jQuery;
-                  $('.ml-subscribe-form-17102286 .row-success').show();
-                  $('.ml-subscribe-form-17102286 .row-form').hide();
-                }
-              `,
-                        }}
-                    /> */}
                 </body>
             </Html>
         );

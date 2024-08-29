@@ -1,39 +1,42 @@
-// Mixins
-@mixin shakeOnHover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-  opacity: .9;
-  border: 4px solid black;
-}
+@import './mixins';
 
 .columnWrapper {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   overflow: auto;
-  width: 100%;
+  width: 74vw;
   max-height: 67vh;
+  padding: 30px;
 
-  .featureRelease {
-    width: 46%;
-    min-width: 100px;
-    display: block;
-    margin: auto;
-    position: relative;
-    height: auto;
-
-    @media (max-width: 840px) {
-      width: 50%;
-    }
-
-    @media (max-width: 400px) {
-      width: 85%;
-      margin: 20px 0 40px 0;
-    }
+  @media (max-width: 980px) {
+    max-height: 60vh;
+    padding: 10px;
   }
 
-  .featureRelease:hover {
-    @include shakeOnHover;
+  .featureReleaseWrapper {
+    flex-basis: 47.5%;
+    min-width: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+
+    @media (max-width: 980px) {
+      flex-basis: 100%;
+    }
+
+    .featureRelease {
+      box-sizing: border-box;
+      min-width: 50px;
+      display: block;
+      width: 100%;
+      position: relative;
+    }
+
+    .featureRelease:hover {
+      @include retroShake;
+    }
+
   }
 
   .previousReleasesWrapper {
@@ -41,38 +44,96 @@
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-content: space-between;
+    flex-basis: 50%;
 
-    @media (min-width: 840px) {
-      width: 50%;
+    @media (max-width: 980px) {
+      flex-basis: 100%;
+      margin-top: 5%;
+    }
+
+    @media (max-width: 600px) {
+      flex-basis: 90%;
     }
 
     .image {
       box-sizing: border-box;
-      min-width: 50px;
+      min-width: 50px; 
       display: block;
-      flex-basis: 42%;
+      flex-basis: 46%;
       position: relative;
-      height: auto;
 
-      @media (max-width: 840px) {
-        flex-basis: 38%;
+      @media (max-width: 980px) {
+        flex-basis: 46%;
+        margin: 2% 0;
       }
 
-      @media (max-width: 400px) {
-        flex-basis: 70%;
+      @media (max-width: 600px) {
+        flex-basis: 100%;
+        margin-top: 5%;
       }
 
       img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
+        @include imgCover;
       }
     }
 
     .image:hover {
-      @include shakeOnHover;
+      @include retroShake;
     }
   }
+
+  .previousReleasesWrapperTwo {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-between;
+    flex-basis: 100%;
+    margin-left: -1.25%;
+    flex-basis: 98%;
+
+    @media (max-width: 980px) {
+      flex-basis: 100%;
+      margin-top: -2%;
+    }
+
+    @media (max-width: 600px) {
+      flex-basis: 90%;
+    }
+
+    .image {
+      flex-basis: 32%;
+      position: relative;
+      margin-top: 1%;
+
+      @media (max-width: 980px) {
+        flex-basis: 46%;
+        margin-top: 2.5%;
+      }
+
+      @media (max-width: 600px) {
+        flex-basis: 100%;
+        margin-top: 6.5%;
+      }
+
+      img {
+        @include imgCover;
+      }
+    }
+
+    .image:hover {
+      @include retroShake;
+    }
+  }
+}
+
+.socialsBottom {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  width: 100%;
 }
 
 

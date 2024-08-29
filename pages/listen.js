@@ -1,22 +1,10 @@
 import Head from 'next/head'
-import Releases from '../components/Releases'
-import { width85, box } from '../styles/pages.module.scss'
-import { useEffect } from 'react';
+import Releases from '../components/Releases';
+import { width85 } from '../styles/pages.module.scss';
+
 
 export default function Listen() {
-    useEffect(() => {
-        // Check if the page has already been reloaded
-        const reloaded = sessionStorage.getItem('reloaded');
-    
-        if (reloaded) {
-          // Mark the page as reloaded
-          sessionStorage.setItem('reloaded', 'false');
-        } else {
-            // First time loading
-            sessionStorage.setItem('reloaded', 'true');
-          }
-      }, []);
-      
+
     return (
         <div className={width85}>
             <Head>

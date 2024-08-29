@@ -1,0 +1,80 @@
+const releases = [{
+    src: '/images/releases/DWM-album-cover.jpg',
+    alt: 'Dance With Me',
+    width: '300',
+    height: '300',
+    link: 'https://hypeddit.com/iuiue5',
+},
+{
+    src: '/images/releases/favorite-number-art-300kb.jpg',
+    alt: 'Favorite Number Remix Artwork',
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/album/2TSFuklCqI71iPOBqOJPaS?si=hwSo9EO1SRCQa0FPePvbIg',
+},
+{
+    src: '/images/releases/treat-yourself.jpg',
+    alt: "Treat Yourself Ep",
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/album/0H5tUnOGnavewSFgqBKEDg?si=BvQqVp1aTB-h9pw7EtPhVQ',
+},
+{
+    src: '/images/releases/way-back-remix-art-180kb.jpg',
+    alt: 'Wayback Remix Artwork',
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/track/448DKwaijMtidQGNUgK058?si=c8b5229e51674fc2',
+},
+{
+    src: '/images/releases/Poro Eyes EP art 3000x3000.jpg',
+    alt: 'Poro Remix Playlist',
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/album/7mz5davIxKHWFMaVT0wYAF?si=1yPEK3MFRaCne6sf_lJhJw',
+},
+{
+    src: '/images/releases/poro-remix-square-190kb.jpg',
+    alt: 'Poro Remix Playlist',
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/playlist/0lpFHhSIftcZIzdBxCTvSy?si=d274aa078acc49f1',
+},
+{
+    src: '/images/releases/Summer-Snow-Remix-art.jpg',
+    alt: 'Summer Snow Remix',
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/album/7caMNBzGS3EIgWnI0H7DHW?si=u8DkRATGS2mjYH4tr73ZEg',
+},
+{
+    src: '/images/releases/confetti-remix-art.jpeg',
+    alt: 'Confetti Remix',
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/album/32yhy57ZqAge2fRHuuuOkQ?si=56fNNxlzSzy5hzuYUiiSRA',
+},
+{
+    src: '/images/releases/Goes-On-Remix-Art.jpg',
+    alt: 'Goes On Remix',
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/album/5LtX0KPzz0ksIO4Ex2HXqs?si=GRLuHc_OQa-1mWIZfvmGbA',
+},
+{
+    src: '/images/releases/Second-Chances-Remix-Art.jpg',
+    alt: 'Second Chances Remix',
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/album/20iIQeYnpz2A3Rmf8MFJ8X?si=s4o4Gre2QJatEUJRnU8lpg',
+},
+{
+    src: '/images/releases/speaking-in-tongues-art.jpg',
+    alt: 'Speaking In Tongues Remix',
+    width: '300',
+    height: '300',
+    link: 'https://open.spotify.com/album/0oJaWylgTeciHQcwPQtK9X?si=zS46BHw9TAeU7uYVsn06kw',
+}
+]
+
+export default releases;

@@ -8,15 +8,10 @@
   height: 95vh;
   box-sizing: border-box;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 .main {
-  overflow: hidden;
-  /* padding: 2% 0; */
   flex: 1;
   display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
