@@ -16,7 +16,7 @@ export default function info() {
             </Head>
             <div className={infoPageContainer}>
                 <div className={infoPagePhoto}>
-                    <Image alt="Poro Image" src="/images/site-images/bw-cali-photo-cropped-370kb.jpg" placeholder='blur' blurDataURL={infoBlurredPhoto} responsive='true' width={500} height={500} priority></Image>
+                    <Image alt="Poro Image" src="/images/site-images/bw-cali-photo-head-305kb.webp" placeholder='blur' blurDataURL={infoBlurredPhoto} responsive='true' width={500} height={500} priority></Image>
                 </div>
                 <div className={bioText}>
                     <Bio />

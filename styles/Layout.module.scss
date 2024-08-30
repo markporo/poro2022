@@ -20,6 +20,14 @@
    overflow: hidden;
   /* padding-bottom: env(safe-area-inset-bottom);  */
 
+  @media (max-width: 1100px) {
+    // height: 83vh;
+  }
+
+  @media (max-width: 800px) {
+    // height: 83vh;
+  }
+
   @media (max-width: 630px) {
     height: 83vh;
   }
