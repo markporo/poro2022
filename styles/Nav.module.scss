@@ -69,8 +69,8 @@
   @include textAndNavs;
   background-color: $poro-blue;
   position: fixed;
-  left: 21px;
-  bottom: 21px;
+  left: 3.5vw;
+  bottom: 3.5vh;
 }
 
 .navBottomRight {
@@ -79,8 +79,8 @@
   @include textAndNavs;
   background-color: $poro-red;
   position: fixed;
-  right: 21px;
-  bottom: 21px;
+  right: 3.5vw;
+  bottom: 3.5vh;
 }
 
 .navBottomMiddle {
