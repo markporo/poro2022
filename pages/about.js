@@ -9,8 +9,8 @@ export default function about() {
                 <title>About</title>
                 <meta name='keywords' content='poro, music, poromusic, dance with me, moonlight, porostosky' />
             </Head>
-            <h1>About</h1>
-            <p>THIS IS ABOUT PAGE</p>
+            {/* <h1>About</h1>
+            <p>THIS IS ABOUT PAGE</p> */}
         </div>
     )
 }
