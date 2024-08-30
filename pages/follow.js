@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image';
 import { topSocials, emailSignUp, followContentContainer, followPagePhoto, emailAndSocials } from '../styles/components/Follow.module.scss'
 import { pageContainer } from '../styles/index.module.scss'
-import EmailSignUpForm from '../components/emailSignUpForm';
+import EmailSignUpForm from '../components/EmailSignUpForm.js';
 import Socials from '../components/Socials';
 
 export default function Follow() {
