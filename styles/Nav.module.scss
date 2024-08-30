@@ -68,6 +68,9 @@
   border-right: 1px solid black;
   @include textAndNavs;
   background-color: $poro-blue;
+  position: fixed;
+  left: 21px;
+  bottom: 21px;
 }
 
 .navBottomRight {
@@ -75,6 +78,9 @@
   border-left: 1px solid black;
   @include textAndNavs;
   background-color: $poro-red;
+  position: fixed;
+  right: 21px;
+  bottom: 21px;
 }
 
 .navBottomMiddle {

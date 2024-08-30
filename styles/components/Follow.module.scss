@@ -12,6 +12,7 @@
     max-height: 70vh;
     overflow: auto;
     position: relative;
+    padding: 15px;
 
     .emailAndSocials {
         display: flex;
@@ -27,7 +28,7 @@
         font-family: 'Poppins-ExtraLight';
 
         @media (max-width: 630px) {
-            padding: 10px;
+            padding: 10px 0;
             width: 100%;
         }
 
@@ -102,6 +103,10 @@
 
                 button:hover {
                     @include retroShake();
+                }
+
+                @media (max-width: 630px) {
+                    width: 100%;
                 }
             }
         }
