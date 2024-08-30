@@ -28,16 +28,16 @@ $poro-red: #d071717e;
   //   background-color: #92278f; 
   // }
 
-  .desktopLogoStyles {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-  }
+  // .desktopLogoStyles {
+  //   @media screen and (max-width: 767px) {
+  //     display: none;
+  //   }
+  // }
   
   .mobileLogoStyles {
     display: none;
 
-    @media screen and (max-width: 767px) {
-      display: flex;
-    }
+    // @media screen and (max-width: 767px) {
+    //   display: flex;
+    // }
   }
