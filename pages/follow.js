@@ -16,12 +16,16 @@ export default function Follow() {
             </Head>
 
             <div className={followContentContainer}>
-                <div className={`${emailAndSocials} ${topSocials}`}>
+                {/* <div className={`${emailAndSocials} ${topSocials}`}>
                     <Socials />
-                </div>
+                </div> */}
                 <div className={followPagePhoto}>
                     <Image alt="Poro Image" src="/images/site-images/bw-cali-pockets-320kb.webp" placeholder='blur' blurDataURL={followBlurredPhoto} fill priority></Image>
                 </div>
+                <div className={topSocials}>
+                        <Socials />
+                    </div>
+                
                 <div className={emailAndSocials}>
                     <div className={emailSignUp}>
                         <EmailSignUpForm />
