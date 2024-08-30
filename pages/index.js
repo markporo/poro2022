@@ -25,7 +25,7 @@ export default function Home({ articles }) {
           <a href="https://hypeddit.com/iuiue5" target="_blank" rel="noopener noreferrer">
             <h4 className={presave}>Click To Presave!</h4>
           </a>
-          <h6>Releasing on <span className={noWrap}>8-16-24!</span></h6>
+          <h6>Releasing on <span className={noWrap}>9-13-24!</span></h6>
           
         </div>
       </div>
