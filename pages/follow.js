@@ -4,6 +4,7 @@ import { topSocials, emailSignUp, followContentContainer, followPagePhoto, email
 import { pageContainer } from '../styles/index.module.scss'
 import EmailSignUpForm from '../components/EmailSignUpForm.js';
 import Socials from '../components/Socials';
+import { followBlurredPhoto } from '../lib/base-64.js';
 
 export default function Follow() {
 
@@ -19,7 +20,7 @@ export default function Follow() {
                     <Socials />
                 </div>
                 <div className={followPagePhoto}>
-                    <Image alt="Poro Image" src="/images/site-images/bw-cali-pockets-320kb.webp" fill priority></Image>
+                    <Image alt="Poro Image" src="/images/site-images/bw-cali-pockets-320kb.webp" placeholder='blur' blurDataURL={followBlurredPhoto} fill priority></Image>
                 </div>
                 <div className={emailAndSocials}>
                     <div className={emailSignUp}>

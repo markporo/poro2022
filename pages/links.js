@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Socials from '../components/Socials'
 import { linksContainer, linksPhoto, linksButtons, linksBox, linksText } from '../styles/components/Links.module.scss';
 import { pageContainer } from '../styles/index.module.scss'
-
+import { linksBlurredPhoto } from '../lib/base-64';
 
 export default function info() {
     return (
@@ -15,7 +15,7 @@ export default function info() {
             </Head>
             <div className={linksContainer}>
                 <div className={linksPhoto}>
-                    <Image alt="Poro Image" src="/images/site-images/bw-cali-photo-head-305kb.webp" intrinsic="true" width={400} height={400} priority></Image>
+                    <Image alt="Poro Image" src="/images/site-images/bw-cali-photo-head-305kb.webp" placeholder='blur' intrinsic="true" width={400} height={400} priority blurDataURL={linksBlurredPhoto}></Image>
                 </div>
                 <div className={linksBox}>
                     <div className={linksButtons}>
