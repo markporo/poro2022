@@ -44,6 +44,7 @@
                 width: 95%;
                 margin: 0 auto;
                 font-family: 'Poppins-ExtraLight';
+                @include br5;
 
 
                 h2 {
@@ -52,11 +53,19 @@
                     margin-bottom: 5px;
                     font-size: 24px;
                     text-align: center;
-                    color: #333;
+                    color: #000000;
+                    font-weight: bold;
+
+
+                    @media (max-width: 630px) {
+                       font-size: 18px;
+                    }
+
                 }
 
                 input {
                     height: 50px;
+                    @include br5;
                 }
 
                 input[type="text"],
@@ -65,7 +74,6 @@
                     padding: 10px;
                     margin-bottom: 15px;
                     border: 1px solid #ccc;
-                    border-radius: 0px;
                     box-sizing: border-box;
                     font-family: 'Poppins-ExtraLight';
                 }
@@ -84,10 +92,10 @@
                     padding: 10px;
                     background-color: black;
                     border: none;
-                    border-radius: 0px;
                     color: white;
                     font-size: 16px;
                     cursor: pointer;
+                    @include br5;
                     font-family: 'Poppins-ExtraLight';
                 }
 
@@ -124,7 +132,7 @@
 
         img {
             object-fit: cover;
-            border-radius: 2px;
+            @include br5;
         }
     }
 }

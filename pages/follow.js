@@ -11,7 +11,7 @@ export default function Follow() {
         <div className={pageContainer}>
             <Head>
                 <title>Poro Follow Page</title>
-                {/* <meta name='keywords' content='poro, music, follow poro on social media, follow, poromusic, dance with me, moonlight, porostosky' /> */}
+                <meta name='keywords' content='poro, music, follow poro on social media, follow, poromusic, dance with me, moonlight, porostosky' />
             </Head>
 
             <div className={followContentContainer}>
@@ -31,6 +31,3 @@ export default function Follow() {
         </div>
     )
 }
-
-// link for poro remixes playlist ---form to submit for remix
-// https://open.spotify.com/playlist/0lpFHhSIftcZIzdBxCTvSy?si=586a09aca5214af9

@@ -3,7 +3,7 @@ import { textContainer } from '../styles/components/Info.module.scss';
 export default function Bio() {
     return (
         <div className={textContainer}>
-            <p>Poro is the solo musical venture of Mark Porostosky, 
+            <p><strong>Poro</strong> is the solo musical venture of Mark Porostosky, 
                 a Cleveland-based artist who’s spent over 14 years as a 
                 multi-instrumentalist and songwriter with The Lighthouse a
                 nd the Whaler. Known for helping the band &quot;grow from a 

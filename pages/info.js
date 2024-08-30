@@ -15,7 +15,7 @@ export default function info() {
             </Head>
             <div className={infoPageContainer}>
                 <div className={infoPagePhoto}>
-                    <Image alt="Poro Image" src="/images/site-images/bw-cali-photo-cropped-2mb.jpg" intrinsic width={500} height={500} priority></Image>
+                    <Image alt="Poro Image" src="/images/site-images/bw-cali-photo-cropped-2mb.jpg" responsive='true' width={500} height={500} priority></Image>
                 </div>
                 <div className={bioText}>
                     <Bio />

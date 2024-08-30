@@ -88,7 +88,7 @@ export default function EmailSignUpForm() {
 
     return (
         <form onSubmit={handleSubmit} className={form}>
-            <h2>Get My Music Updates!</h2>
+            <h2>Be The First To Hear New Tunes!</h2>
 
             <input
                 type="text"
