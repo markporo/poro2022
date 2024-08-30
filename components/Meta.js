@@ -74,7 +74,7 @@ const Meta = ({ title = 'Poro Music', keywords = 'Poro, poro, indie pop, poro ba
       {/* End Google Tag Manager */}
 
     <Head>
-      <meta name='viewport' content='width=device-width, initial-scale=1' />
+      <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta name='keywords' content={keywords || 'default,keywords'} />
       <meta name='description' content={description || 'Default description'} />
       {additionalMeta && additionalMeta.map((meta, index) => (
