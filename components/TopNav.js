@@ -5,7 +5,7 @@ import Logo from '../components/Logo';
 
 function TopNav() {
     return (
-        <nav className={topNavs}>
+        <div className={topNavs}>
             <div className={navLeft}>
                 <Link href='/listen'>Listen</Link>
             </div>
@@ -13,7 +13,7 @@ function TopNav() {
             <div className={navRight}>
                 <Link href='/follow'>Follow</Link>
             </div>
-        </nav>
+        </div>
     )
 }
 

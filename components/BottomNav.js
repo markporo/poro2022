@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function BottomNav() {
     return (
-        <nav className={styles.bottomNavs}>
+        <div className={styles.bottomNavs}>
             <div className={styles.navBottomLeft}>
               <Link href='/info'>INFO</Link>
             </div>
@@ -14,7 +14,7 @@ function BottomNav() {
             <div className={styles.navBottomRight}>
               <Link href='/store'>Shop</Link>
             </div>
-        </nav>
+        </div>
     )
 
 }
