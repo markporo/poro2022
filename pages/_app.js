@@ -1,6 +1,6 @@
 import Layout from '../components/Layout';
 import "../lib/fontawesome";
-import '../styles/globals.css';
+import '../styles/globals.scss';
 import '../styles/fonts.scss';
 
 

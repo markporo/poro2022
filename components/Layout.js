@@ -1,6 +1,6 @@
 import TopNav from './TopNav'
 import BottomNav from './BottomNav'
-import styles from '../styles/Layout.module.css'
+import styles from '../styles/Layout.module.scss'
 import Meta from './Meta'
 import MobileLogo from './MobileLogo'
 import {mobileLogoStyles} from '../styles/Logo.module.scss'
