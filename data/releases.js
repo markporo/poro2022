@@ -1,5 +1,5 @@
 const releases = [{
-    src: '/images/releases/DWM-album-cover.jpg',
+    src: '/images/releases/DWM-album-cover-300kb.jpg',
     alt: 'Dance With Me',
     width: '300',
     height: '300',

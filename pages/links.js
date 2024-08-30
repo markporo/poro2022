@@ -15,7 +15,7 @@ export default function info() {
             </Head>
             <div className={linksContainer}>
                 <div className={linksPhoto}>
-                    <Image alt="Poro Image" src="/images/site-images/bw-cali-photo-head3-2x3.jpg" intrinsic="true" width={400} height={400} priority></Image>
+                    <Image alt="Poro Image" src="/images/site-images/bw-cali-photo-head-305kb.webp" intrinsic="true" width={400} height={400} priority></Image>
                 </div>
                 <div className={linksBox}>
                     <div className={linksButtons}>

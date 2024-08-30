@@ -14,7 +14,7 @@ export default function store() {
             <div className={vinyl}>
                 <h1>Merch</h1>
                 <p>...coming soon!</p>
-                <Image className={rotate} alt="spinning vinyl record" src="/images/site-images/vinyl.png" width={200} height={200} layout="responsive"></Image>
+                <Image className={rotate} alt="spinning vinyl record" src="/images/site-images/vinyl-80kb.webp" width={200} height={200} layout="responsive"></Image>
             </div>
         </div>
     )

@@ -19,7 +19,7 @@ export default function Follow() {
                     <Socials />
                 </div>
                 <div className={followPagePhoto}>
-                    <Image alt="Poro Image" src="/images/site-images/bw-cali-pockets.JPG" fill priority></Image>
+                    <Image alt="Poro Image" src="/images/site-images/bw-cali-pockets-320kb.webp" fill priority></Image>
                 </div>
                 <div className={emailAndSocials}>
                     <div className={emailSignUp}>

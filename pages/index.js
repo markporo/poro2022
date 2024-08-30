@@ -14,7 +14,7 @@ export default function Home({ articles }) {
       <div className={indexContentContainer}>
         <div className={homePageImage}>
           <a href="https://hypeddit.com/iuiue5" target="_blank" rel="noopener noreferrer">
-            <Image className={indexPageContainerSingleSquare} alt="Dance With Me Album Cover" src="/images/releases/DWM-album-cover-300kb.jpg" width={1000} height={1000} priority layout="responsive"></Image>
+            <Image className={indexPageContainerSingleSquare} alt="Dance With Me Album Cover" src="/images/releases/DWM-album-cover-300kb.jpg" width={500} height={500} priority layout="responsive"></Image>
           </a>
         </div>
         <div className={homePageText}>
