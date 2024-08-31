@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image';
 import Bio from '../components/Bio';
 import Socials from '../components/Socials'
-import { infoPageContainer, infoPagePhoto, bioText } from '../styles/components/Info.module.scss';
+import { infoPageContainer, infoPagePhoto, bioText, mobile, desktop } from '../styles/components/Info.module.scss';
 import { pageContainer } from '../styles/index.module.scss';
 import {infoBlurredPhoto} from '../lib/base-64.js';
 
@@ -16,7 +16,8 @@ export default function info() {
             </Head>
             <div className={infoPageContainer}>
                 <div className={infoPagePhoto}>
-                    <Image alt="Poro Image" src="/images/site-images/bw-cali-photo-head-305kb.webp" placeholder='blur' blurDataURL={infoBlurredPhoto} responsive='true' width={500} height={500} priority></Image>
+                    <Image alt="Poro Image" className={mobile} src="/images/site-images/bw-cali-photo-head-305kb.webp" placeholder='blur' blurDataURL={infoBlurredPhoto} responsive='true' width={500} height={500} priority></Image>
+                    <Image alt="Poro Image" className={desktop} src="/images/site-images/bw-cali-photo-cropped-370kb.jpg" placeholder='blur' blurDataURL={infoBlurredPhoto} responsive='true' width={500} height={500} priority></Image>
                 </div>
                 <div className={bioText}>
                     <Bio />

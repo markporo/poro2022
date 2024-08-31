@@ -22,7 +22,8 @@
     .infoPagePhoto {
         width: 40%;
         text-align: center;
-        height: auto; /* Ensures it scales properly */
+        height: auto;
+        /* Ensures it scales properly */
         box-sizing: border-box;
 
         img {
@@ -37,8 +38,25 @@
             }
         }
 
+        img.mobile {
+            display: none;
+        }
+
+        img.desktop {
+            display: block;
+        }
+
         @media (max-width: 1080px) {
             width: 100%;
+
+            img.mobile {
+                display: block;
+                margin: 0 auto;
+            }
+
+            img.desktop {
+                display: none;
+            }
         }
     }
 
