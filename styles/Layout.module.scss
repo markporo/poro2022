@@ -17,12 +17,13 @@
    overflow: hidden;
   /* padding-bottom: env(safe-area-inset-bottom);  */
 
-  @media (max-height: 750px) and (max-width: 630px) {
-    height: 83vh;
-  }
 
   @media (max-width: 1200px) {
     height: 90vh;
+  }
+
+  @media (max-height: 750px) and (max-width: 630px) {
+    height: 83vh;
   }
 }
 
