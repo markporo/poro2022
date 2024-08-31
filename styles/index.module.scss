@@ -18,14 +18,21 @@
         // align-content: center;
         width: 100%;
         max-width: 1000px;
-        // height: 100%;
         text-align: center;
         padding: 15px 0;
         margin:0;
         position: relative;
-        max-height: 67vh;
+        height: 67vh;
         overflow: scroll;
         font-family: 'Poppins-ExtraLight';
+
+        @media (max-width: 1200px) {
+            height: 57vh;
+        }
+
+        @media (max-width: 630px) {
+            height: 50vh;
+        }
 
         .homePageImage {
             box-sizing: border-box;
@@ -39,6 +46,10 @@
             @media (max-width: 767px) {
                 width: 70%;
                 margin-right: 0;
+            }
+
+            @media (max-height: 700px) and (max-width: 500px) {
+                width: 47%;
             }
 
             .indexPageContainerSingleSquare {
@@ -98,6 +109,14 @@
                 @media (max-width: 767px) {
                     font-size: 64px;
                 }
+
+                @media (max-width: 550px) {
+                    font-size: 48px;
+                }
+
+                @media (max-width: 400px) {
+                    font-size: 36px;
+                }
             }
 
             h6 {
@@ -135,6 +154,16 @@
                 @media (max-width: 767px) {
                     font-size: 32px;
                     width: 100%;
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 28px;
+                    width: 80%;
+                }
+
+                @media (max-width: 500px) {
+                    font-size: 24px;
+
                 }
             }
 

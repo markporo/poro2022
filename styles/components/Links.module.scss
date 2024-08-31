@@ -12,6 +12,10 @@
     height: 65vh;
     overflow: scroll;
 
+    @media (max-width: 630px) {
+        height: 50vh;
+    }
+
     .linksPhoto {
         width: 100%;
         max-width: 300px;
