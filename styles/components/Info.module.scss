@@ -11,6 +11,10 @@
     height: 60vh;
     overflow: scroll;
 
+    @media (max-width: 1200px) {
+        height: 57vh;
+    }
+
     @media (max-width: 630px) {
         height: 50vh;
     }

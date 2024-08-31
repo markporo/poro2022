@@ -8,7 +8,7 @@
   border: 1px solid black;
   margin: 2.5vh; 
  
-  height: 92vh;
+  height: 95vh;
   box-sizing: border-box;
  
   border-radius: 5px;
@@ -17,24 +17,8 @@
    overflow: hidden;
   /* padding-bottom: env(safe-area-inset-bottom);  */
 
-  @media (max-height: 1200px) {
-    height: 89vh;
-  }
-
-  // @media (max-height: 700px) {
-  //   height: 83vh;
-  // }
-
-  @media (max-height: 800px) {
+  @media (max-height: 750px) and (max-width: 630px) {
     height: 83vh;
-  }
-
-  @media (max-height: 500px) {
-    height: 80vh;
-  }
-
-  @media (max-height: 400px) {
-    height: 77vh;
   }
 }
 
