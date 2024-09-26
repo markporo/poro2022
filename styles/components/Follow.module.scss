@@ -8,14 +8,14 @@
     align-items: center;
     width: 100%;
     max-width: 870px;
-    height: 60vh;
+    height: 100%;
     overflow: auto;
     position: relative;
     padding: 15px;
 
-    @media (max-width: 630px) {
-        height: 50vh;
-    }
+    // @media (max-width: 630px) {
+    //     height: 50vh;
+    // }
 
     .emailAndSocials {
         display: flex;

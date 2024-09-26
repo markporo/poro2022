@@ -35,9 +35,17 @@ $poro-red: #d071717e;
   }
   
   .mobileLogoStyles {
+    display: block;
+    position: fixed;
+    top: 3.6vh;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid black;
+    line-height: 1;
+
     display: none;
 
     @media screen and (max-width: 767px) {
-      display: flex;
+      display: block;
     }
   }

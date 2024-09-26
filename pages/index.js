@@ -24,9 +24,10 @@ export default function Home({ articles }) {
           {/* <h1>Dance <span className={noWrap}>With Me</span></h1> */}
           {/* <h1><span className={color1}>Dance</span> <span className={noWrap}><span className={color2}>With</span> <span className={color3}>Me</span></span></h1> */}
           <a href="https://hypeddit.com/iuiue5" target="_blank" rel="noopener noreferrer">
-            <h4 className={presave}>Click To Presave!</h4>
+            <h4 className={presave}>Click To Listen!</h4>
           </a>
-          <h6>Releasing on <span className={noWrap}>9-13-24!</span></h6>
+          {/* <h6>Releasing on <span className={noWrap}>9-13-24!</span></h6> */}
+          <h6>Out Now!</h6>
           
         </div>
       </div>

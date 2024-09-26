@@ -59,13 +59,15 @@
   }
   
   @mixin bothBotAndTopNavs {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: flex-start;
+    // display: flex;
+    // flex-flow: row nowrap;
+    // justify-content: space-between;
+    // align-items: flex-start;
     font-family: $main-font-family;
     letter-spacing: .2em;
     font-weight: bolder;
+    @include transitionAnimation();
+    @include br5;
   }
   
   @mixin textAndNavs {
