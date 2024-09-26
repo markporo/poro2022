@@ -28,24 +28,22 @@ $poro-red: #d071717e;
   //   background-color: #92278f; 
   // }
 
-  .desktopLogoStyles {
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
-  }
+  // .desktopLogoStyles {
+  //   @media screen and (max-width: 767px) {
+  //     display: none;
+  //   }
+  // }
   
-  .mobileLogoStyles {
-    display: block;
-    position: fixed;
-    top: 3.6vh;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid black;
-    line-height: 1;
+  // .mobileLogoStyles {
+  //   display: none;
 
-    display: none;
-
-    @media screen and (max-width: 767px) {
-      display: block;
-    }
-  }
+  //   @media screen and (max-width: 767px) {
+  //     display: block;
+  //     position: fixed;
+  //     top: 3.6vh;
+  //     left: 50%;
+  //     transform: translateX(-50%);
+  //     border: 1px solid black;
+  //     line-height: 1;
+  //   }
+  // }
