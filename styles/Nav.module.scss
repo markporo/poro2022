@@ -74,7 +74,8 @@
   background-color: $poro-blue;
   position: fixed;
   left: 3.5vh;
-  bottom: 3.5vh;
+  bottom: 10.5dvh;
+  // bottom: 3.5vh;
 }
 
 .navBottomRight {
@@ -84,8 +85,8 @@
   background-color: $poro-red;
   position: fixed;
   right: 3.5vh;
-  // bottom: 10.5vh;
-  bottom: 3.5vh;
+  bottom: 10.5dvh;
+  // bottom: 3.5vh;
 }
 
 .navBottomMiddle {
