@@ -95,6 +95,12 @@
   @include textAndNavs;
 }
 
+.bottomAbsoluteContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
 
 // HEADER FOR BOTH MOBILE AND DESKTOP
 .header {
