@@ -142,6 +142,10 @@
         img {
             object-fit: cover;
             @include br5;
+
+            @media (max-width: 630px) {
+                object-fit: contain;
+            }
         }
     }
 }
