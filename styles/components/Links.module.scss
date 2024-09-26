@@ -9,12 +9,12 @@
     max-width: 300px;
     margin: 0 auto;
     padding: 0 10px;
-    height: 65vh;
+    height: 100%;
     overflow: scroll;
 
-    @media (max-width: 630px) {
-        height: 50vh;
-    }
+    // @media (max-width: 630px) {
+    //     height: 50vh;
+    // }
 
     .linksPhoto {
         width: 100%;
