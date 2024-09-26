@@ -10,7 +10,7 @@ const Layout = ({ children, title, description, additionalMeta, keywords }) => {
     return ( 
         <div className={styles.container}>
             <Meta title={title} description={description} keywords ={keywords} additionalMeta={additionalMeta} />
-            {/* <MobileLogo></MobileLogo> */}
+            <MobileLogo></MobileLogo>
             <TopNav></TopNav>
             <main className={styles.main}>
                 {children}
