@@ -1,0 +1,44 @@
+@import '../mixins';
+@import '../variables';
+
+.cursiveLink {
+    position: absolute;
+    bottom: 2.6dvh;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+
+    @media screen and (max-width: 350px) {
+        bottom: 3dvh;
+    }
+
+    .normalText {
+        font-family: $main-font-family;
+        display: block;
+        font-size: 14px;
+
+        @media screen and (min-width: 768px) {
+            display: inline;
+            margin: 0px 8px 0px 0px;
+            font-size: 28px;
+        }
+
+        @media screen and (max-width: 350px) {
+            font-size: 12px;
+        }
+    }
+
+    .songTitleText {
+        font-family: 'Rujack';
+        font-size: 28px;
+
+        @media screen and (max-width: 350px) {
+            font-size: 22px;
+        }
+    }
+
+    .songTitleText:hover {
+        font-size: 30px;
+        @include retroShake();
+    }
+}

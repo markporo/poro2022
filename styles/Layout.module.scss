@@ -1,14 +1,8 @@
 .container {
   box-sizing: border-box;
-  /* display: grid;
-  grid-template-rows: auto 1fr auto; */
-  // display: flex; 
-  // flex-direction: column;
-
   border: 1px solid black;
   // height: 95dvh;
   // margin: 2.5dvh;
- 
   margin: 2.5dvh 2.5dvh 7dvh 2.5dvh;
   height: 88dvh;
   box-sizing: border-box;
@@ -17,20 +11,15 @@
   background-color: #E2E4E5;
    padding: 2px; 
    overflow: hidden;
-  /* padding-bottom: env(safe-area-inset-bottom);  */
-
-
-  // @media (max-width: 1200px) {
-  //   height: 85vh;
-  // }
-
-  // @media (max-height: 750px) and (max-width: 630px) {
-  //   height: 83vh;
-  // }
 }
 
 .main {
-  height: calc(100% - 200px);
+  height: calc(100% - 150px);
   width: 100%;
-  margin-top: 130px;
+  margin-top: 100px;
+
+  @media  screen and (max-width: 767px) {
+    height: calc(100% - 120px);
+    margin-top: 60px;
+  }
 }

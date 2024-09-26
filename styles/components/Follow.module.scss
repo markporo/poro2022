@@ -7,15 +7,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 870px;
+    max-width: 1000px;
     height: 100%;
     overflow: auto;
     position: relative;
-    padding: 15px;
-
-    // @media (max-width: 630px) {
-    //     height: 50vh;
-    // }
+    // padding: 15px;
 
     .emailAndSocials {
         display: flex;
@@ -144,7 +140,7 @@
             @include br5;
 
             @media (max-width: 630px) {
-                object-fit: contain;
+                object-position: top;
             }
         }
     }

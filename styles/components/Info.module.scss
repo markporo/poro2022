@@ -6,18 +6,11 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    width: 90%;
-    max-width: 900px;
+    width: 80vw;
+    padding: 0;
+    max-width: 980px;
     height: 100%;
     overflow: scroll;
-
-    // @media (max-width: 1200px) {
-    //     height: 57vh;
-    // }
-
-    // @media (max-width: 630px) {
-    //     height: 50vh;
-    // }
 
     .infoPagePhoto {
         width: 40%;

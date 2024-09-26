@@ -75,7 +75,6 @@
   position: fixed;
   left: 3.5vh;
   bottom: 10.5dvh;
-  // bottom: 3.5vh;
 }
 
 .navBottomRight {
@@ -86,7 +85,6 @@
   position: fixed;
   right: 3.5vh;
   bottom: 10.5dvh;
-  // bottom: 3.5vh;
 }
 
 .navBottomMiddle {
@@ -141,33 +139,23 @@
 }
 
 .header:hover {
-  // font-size: 2rem;
-  // width: 200px;
   border: 1.5px solid grey;
   // @include transitionAnimation;
   // @include retroShake();
 
   @media (max-width: 767px) {
-    // font-size: 1.6rem;
     border: 1px solid black;
   }
 }
 
 .header:focus-within {
-  // font-size: 2rem;
   border: 1.5px solid black;
 
   @media (max-width: 767px) {
-    // font-size: 1.6rem;
     border: 1px solid black;
   }
 }
 
-// what should be transitioned?
-// transform: translate()
-//transform: scale()
-//transform: rotate()
-// opacity
 //----go back and change out font size and border with transform: scale()
 // ---these take up the least amount of cpu processing
 

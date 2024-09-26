@@ -13,42 +13,35 @@
     .indexContentContainer {
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         width: 100%;
         max-width: 1000px;
         text-align: center;
-        padding: 15px 0;
+        padding: 0 10px;
         margin:0;
         position: relative;
         height: 100%;
         overflow: scroll;
         font-family: 'Poppins-ExtraLight';
 
-        // @media (max-width: 1200px) {
-        //     height: 57vh;
-        // }
-
-        // @media (max-width: 630px) {
-        //     height: 50vh;
-        // }
-
         .homePageImage {
             box-sizing: border-box;
-            max-width: 400px;
+            max-width: 450px;
             min-width: 50px;
             margin: 0%;
-            margin-right: -2%;
+            // margin-right: -2%;
             display: block;
             width: 40%;
 
             @media (max-width: 767px) {
-                width: 70%;
+                width: 55%;
+                max-width: 600px;
                 margin-right: 0;
             }
 
-            @media (max-height: 700px) and (max-width: 500px) {
-                width: 47%;
+            @media (max-width: 500px) {
+                width: 85%;
             }
 
             .indexPageContainerSingleSquare {
@@ -71,7 +64,7 @@
             flex-flow: column;
             justify-content: center;
             margin: 0;
-            margin-left: -2%;
+            // margin-left: 5%;
 
             @media (max-width: 767px) {
                 width: 80%;
