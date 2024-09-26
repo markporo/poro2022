@@ -20,7 +20,7 @@ export default function Follow() {
                     <Socials />
                 </div> */}
                 <div className={followPagePhoto}>
-                    <Image alt="Poro Image" src="/images/site-images/bw-cali-pockets-320kb.webp" placeholder='blur' blurDataURL={followBlurredPhoto} fill priority></Image>
+                    <Image alt="Poro Image" src="/images/site-images/poro-colored-with-shadow-still-11kb.webp" placeholder='blur' blurDataURL={followBlurredPhoto} fill priority></Image>
                 </div>
                 <div className={topSocials}>
                         <Socials />

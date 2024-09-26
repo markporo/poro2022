@@ -20,7 +20,7 @@ export default function info() {
                 <div className={linksBox}>
                     <div className={linksButtons}>
                         <a
-                            href="https://hypeddit.com/iuiue5" 
+                            href="https://hypeddit.com/rrmroh" 
                             target="_blank"
                             rel="noopener noreferrer"
                             className={linksText}
