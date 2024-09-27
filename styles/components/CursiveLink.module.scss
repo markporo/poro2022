@@ -12,6 +12,10 @@
         bottom: 3dvh;
     }
 
+    @media (max-height: 600px) and (max-width: 450px) {
+        bottom: 1.4dvh;
+    }
+
     .normalText {
         font-family: $main-font-family;
         display: block;

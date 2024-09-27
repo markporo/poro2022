@@ -90,13 +90,14 @@
 .navBottomMiddle {
   @include textAndNavs;
   background-color: $poro-green;
-}
-
-.navBottomMiddle {
   border-top: 1px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
   @include textAndNavs;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 10.5dvh;
 }
 
 

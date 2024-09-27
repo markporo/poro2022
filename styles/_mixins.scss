@@ -39,15 +39,17 @@
 
 // Nav Mixins MOstly
 @mixin selectedPage ($color) {
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-width: 2px;
     background-color: $color;
-    border: 1.5px solid black;
+    width: auto;
+    border: 1.2px solid black;
   }
   
   @mixin hoverNavLink {
-    font-size: 1.2rem;
-    border-width: 1.5px;
+    font-size: 1.1rem;
+    border-width: 1.2px;
+    width: auto;
   }
   
   @mixin transitionAnimation {
@@ -66,9 +68,13 @@
   }
   
   @mixin textAndNavs {
-    padding: 5px;
+    padding: 3px;
     @include transitionAnimation();
     @include br5;
+    width: auto;
+    max-width: 100px;
+    text-align: center;
+    font-size: .8rem;
   }
   
   @mixin shakeOnHover {

@@ -7,11 +7,11 @@ function TopNav() {
     return (
         <div className={topNavs}>
             <div className={navLeft}>
-                <Link href='/listen'>Listen</Link>
+                <Link href='/listen'>Music</Link>
             </div>
             <Logo></Logo>
             <div className={navRight}>
-                <Link href='/follow'>Follow</Link>
+            <Link href='/info'>About</Link>
             </div>
         </div>
     )
