@@ -38,6 +38,23 @@
         width: 100%;
         // position: absolute;
 
+        @media (min-width: 768px) {
+            
+              position: absolute; // Overlay links on top of the image
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%); // Center the box
+              z-index: 10; // Ensure it appears above the image
+              padding: 20px; // Adjust as needed
+              background-color: rgba(255, 255, 255, 0.7); // Optional for better visibility
+         
+          
+            // Remove background if you don't want it to overlay on desktop
+        
+              background-color: transparent;
+            
+          }
+
         .linksButtons {
             width: 100%;
             background-color: #f0f0f0;
