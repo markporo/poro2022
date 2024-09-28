@@ -4,6 +4,8 @@ import Image from "next/legacy/image"
 import SongTitle from '../components/SongReleaseTitle';
 import { indexContentContainer, indexPageContainerSingleSquare, pageContainer, homePageImage, homePageText, noWrap, presave, color3, color2, color1 } from '../styles/index.module.scss';
 import { indexBlurrePhoto } from '../lib/base-64.js';
+import { textBlurb, aboutTitle } from '../styles/pages.module.scss';
+
 
 export default function Home({ articles }) {
   return (
@@ -13,22 +15,27 @@ export default function Home({ articles }) {
         <meta name='keywords' content='poro, Cleveland OHIO, poromusic, dance with me, moonlight, porostosky' />
       </Head>
       <div className={indexContentContainer}>
+        {/* <div className={textBlurb}>
+          <h1 className={aboutTitle}>News</h1>
+        </div> */}
         <div className={homePageImage}>
           <a href="https://hypeddit.com/rrmroh" target="_blank" rel="noopener noreferrer">
             <Image className={indexPageContainerSingleSquare} alt="Dance With Me Album Cover" src="/images/releases/DWM-album-cover-300kb.jpg" placeholder='blur' blurDataURL={indexBlurrePhoto} width={500} height={500} priority layout="responsive"></Image>
           </a>
         </div>
         <div className={homePageText}>
-          {/* listen link/ presave link */}
+          
           <SongTitle></SongTitle>
-          {/* <h1>Dance <span className={noWrap}>With Me</span></h1> */}
-          {/* <h1><span className={color1}>Dance</span> <span className={noWrap}><span className={color2}>With</span> <span className={color3}>Me</span></span></h1> */}
+          <h6>Is Out Now!</h6>
           <a href="https://hypeddit.com/rrmroh" target="_blank" rel="noopener noreferrer">
             <h4 className={presave}>Click To Listen!</h4>
           </a>
+
+          {/* <h1>Dance <span className={noWrap}>With Me</span></h1> */}
+          {/* <h1><span className={color1}>Dance</span> <span className={noWrap}><span className={color2}>With</span> <span className={color3}>Me</span></span></h1> */}
           {/* <h6>Releasing on <span className={noWrap}>9-13-24!</span></h6> */}
-          <h6>Out Now!</h6>
-          
+
+
         </div>
       </div>
     </div>

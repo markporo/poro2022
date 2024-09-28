@@ -11,7 +11,7 @@ function TopNav() {
             </div>
             <Logo></Logo>
             <div className={navRight}>
-            <Link href='/info'>About</Link>
+            <Link href='/about'>About</Link>
             </div>
         </div>
     )

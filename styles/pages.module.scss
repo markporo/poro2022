@@ -1,3 +1,5 @@
+@import './variables';
+@import './mixins';
 
 //scss variables
 $primary-blue: #1c658c50;
@@ -7,14 +9,12 @@ $primary-red: #a860707a;
 $primary-white: #fbfbef;
 $primary-darkish: #6c6a82;
 
-$main-font-family: "Londrina Sketch", cursive;
-
 @mixin transitionAnimation {
     transition-duration: .2s;
     transition-property: all; // what is being effected by transition-duration
     transition-delay: .05s;
     transition-timing-function: ease-in-out;
-  }
+}
 
 .width85 {
     display: flex;
@@ -22,8 +22,80 @@ $main-font-family: "Londrina Sketch", cursive;
     justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: 100%;    
+    width: 100%;
 }
+
+.textBlurb {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    // max-width: 1000px;
+    overflow: hidden;
+    white-space: nowrap;
+    /* Prevent wrapping */
+
+    // this font-size/ letter spacing relationship works for 'Music'
+    h1 {
+        margin: 5px 0;
+        font-size: 6vw;
+        letter-spacing: 14.5vw;
+        font-family: $fun-font, $main-font-family, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        @media (min-width: 768px) {
+            font-size: 3vw;
+            letter-spacing: 16.4vw;
+        }
+    }
+
+    // this keeps the title from expanding to far if the inside content container has a max-width of 1000px
+    h1.aboutTitle {
+        @media (min-width: 1260px) {
+            font-size: 2rem;
+            letter-spacing: 13.2rem;
+        }
+    }
+
+    p {
+        font-size: 1rem;
+        font-family: $main-font-family, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        ;
+    }
+}
+
+.textBlurbConnect {
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-48%);
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+
+    h1 {
+        margin: 5px 0;
+        font-size: 3.2vw;
+        letter-spacing: 5vw;
+        font-family: $fun-font, $main-font-family, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        @media (min-width: 768px) {
+            margin: 15px 0 0 0;
+            font-size: 3vw;
+            letter-spacing: 4.4vw;
+        }
+    }
+
+    // this keeps the title from expanding to far if the inside content container has a max-width of 1000px
+    // h1.aboutTitle {
+    //     @media (min-width: 1260px) {
+    //         font-size: 2rem;
+    //         letter-spacing: 13.2rem;
+    //     }
+    // }
+}
+
+
 
 /* might need to make parent elements overflow hidden if flex items need scrolling */
 
@@ -45,4 +117,3 @@ $main-font-family: "Londrina Sketch", cursive;
     transform: translateY(-2px);
     box-shadow: 0px 3px 7px $primary-dark-blue;
 }
-

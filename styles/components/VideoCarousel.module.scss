@@ -1,0 +1,26 @@
+@import '../mixins';
+@import '../variables';
+
+.videoContainer {
+    padding: 0;
+    margin: 0 auto;
+    overflow: scroll;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .videoWrapper {
+        iframe {
+            width: 80vw;
+            height: 45vw;
+            max-width: 720px;
+            max-height: 405px;
+        }
+    }
+
+    .socialContainer {
+      @include  flex-column-center();
+    }
+}

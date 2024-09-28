@@ -20,35 +20,55 @@ export default function info() {
                 <div className={linksBox}>
                     <div className={linksButtons}>
                         <a
-                            href="https://hypeddit.com/rrmroh" 
+                            href="https://hypeddit.com/rrmroh"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={linksText}
                         >
-                            Pre-save DJTSA!
+                            {`Listen to "Dance With Me"!`}
                         </a>
                     </div>
                     <div className={linksButtons}>
                         <a
-                            href="https://open.spotify.com/playlist/0lpFHhSIftcZIzdBxCTvSy?si=79f277c05ae84ca4" 
+                            href="https://open.spotify.com/playlist/0lpFHhSIftcZIzdBxCTvSy?si=79f277c05ae84ca4"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={linksText}
                         >
-                            Listen to Poro Remixes
+                            {`Poro Remixes (Spotify Playlist)`}
                         </a>
                     </div>
-                    <div className={linksButtons}>
-                        <Link
-                            href="/"
-                            className={linksText}
-                        >
-                            Poro Home Page
-                        </Link>
+                        <div className={linksButtons}>
+                            <a
+                                href="https://instagram.com/poromusic"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={linksText}
+                            >
+                                {`Follow Poro on Instagram`}
+                            </a>
+                        </div>
+                        {/* <div className={linksButtons}>
+                            <a
+                                href="https://tiktok.com/poromusic"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className={linksText}
+                            >
+                                {`Follow Poro on Tiktok`}
+                            </a>
+                        </div> */}
+                        <div className={linksButtons}>
+                            <Link
+                                href="/"
+                                className={linksText}
+                            >
+                                Poro Home Page
+                            </Link>
+                        </div>
+                        <Socials />
                     </div>
-                    <Socials />
                 </div>
             </div>
-        </div>
-    )
+            )
 } 
