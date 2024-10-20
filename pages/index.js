@@ -19,21 +19,23 @@ export default function Home({ articles }) {
           <h1 className={aboutTitle}>News</h1>
         </div> */}
         <div className={homePageImage}>
-          <a href="https://hypeddit.com/rrmroh" target="_blank" rel="noopener noreferrer">
-            <Image className={indexPageContainerSingleSquare} alt="Dance With Me Album Cover" src="/images/releases/DWM-album-cover-300kb.jpg" placeholder='blur' blurDataURL={indexBlurrePhoto} width={500} height={500} priority layout="responsive"></Image>
+          <a href="https://hypeddit.com/poromusic/moonlight" target="_blank" rel="noopener noreferrer">
+            <Image className={indexPageContainerSingleSquare} alt="Moonlight Album Cover" src="/images/releases/moonlight artwork-150kb.webp" placeholder='blur' blurDataURL={indexBlurrePhoto} width={500} height={500} priority layout="responsive"></Image>
           </a>
         </div>
         <div className={homePageText}>
           
           <SongTitle></SongTitle>
-          <h6>Is Out Now!</h6>
-          <a href="https://hypeddit.com/rrmroh" target="_blank" rel="noopener noreferrer">
-            <h4 className={presave}>Click To Listen!</h4>
+          {/* <h6>Is Out Now!</h6> */}
+          <h6>Releasing on <span className={noWrap}>10-25-24!</span></h6>
+          <a href="https://hypeddit.com/poromusic/moonlight" target="_blank" rel="noopener noreferrer">
+            {/* <h4 className={presave}>Click To Listen!</h4> */}
+            <h4 className={presave}>Presave Now!</h4>
           </a>
 
           {/* <h1>Dance <span className={noWrap}>With Me</span></h1> */}
           {/* <h1><span className={color1}>Dance</span> <span className={noWrap}><span className={color2}>With</span> <span className={color3}>Me</span></span></h1> */}
-          {/* <h6>Releasing on <span className={noWrap}>9-13-24!</span></h6> */}
+          
 
 
         </div>

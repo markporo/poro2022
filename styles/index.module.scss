@@ -99,6 +99,10 @@
                     font-size: 72px;
                 }
 
+                @media (min-width: 768px) {
+                    padding-left: 16px;
+                }
+
                 @media (max-width: 767px) {
                     font-size: 64px;
                 }

@@ -7,7 +7,8 @@ function BottomNav() {
     <div className={styles.bottomNavs}>
       <div className={styles.navBottomLeft}>
         
-        <Link href='/store'>Shop</Link>
+        {/* <Link href='/store'>Shop</Link> */}
+        <Link href='/links'>Links</Link>
       </div>
       <div className={styles.navBottomMiddle}>
       <Link href='/follow'>Connect</Link>

@@ -25,6 +25,10 @@ $primary-darkish: #6c6a82;
     width: 100%;
 }
 
+.textShadow {
+    text-shadow: .5px .5px 1.5px rgba(44, 41, 41, 0.467);
+}
+
 .textBlurb {
     text-align: center;
     position: relative;
@@ -85,14 +89,6 @@ $primary-darkish: #6c6a82;
             letter-spacing: 4.4vw;
         }
     }
-
-    // this keeps the title from expanding to far if the inside content container has a max-width of 1000px
-    // h1.aboutTitle {
-    //     @media (min-width: 1260px) {
-    //         font-size: 2rem;
-    //         letter-spacing: 13.2rem;
-    //     }
-    // }
 }
 
 
