@@ -5,6 +5,7 @@ import SongTitle from '../components/SongReleaseTitle';
 import { indexContentContainer, indexPageContainerSingleSquare, pageContainer, homePageImage, homePageText, noWrap, presave, color3, color2, color1 } from '../styles/index.module.scss';
 import { indexBlurrePhoto } from '../lib/base-64.js';
 import { textBlurb, aboutTitle } from '../styles/pages.module.scss';
+//import Particles from '../components/Particles.js';
 
 
 export default function Home({ articles }) {
@@ -15,22 +16,23 @@ export default function Home({ articles }) {
         <meta name='keywords' content='poro, Cleveland OHIO, poromusic, dance with me, moonlight, porostosky' />
       </Head>
       <div className={indexContentContainer}>
+      {/* <Particles /> */}
         {/* <div className={textBlurb}>
           <h1 className={aboutTitle}>News</h1>
         </div> */}
         <div className={homePageImage}>
-          <a href="https://hypeddit.com/poromusic/moonlight" target="_blank" rel="noopener noreferrer">
-            <Image className={indexPageContainerSingleSquare} alt="Moonlight Album Cover" src="/images/releases/moonlight artwork-150kb.webp" placeholder='blur' blurDataURL={indexBlurrePhoto} width={500} height={500} priority layout="responsive"></Image>
+          <a href="https://hypeddit.com/poromusic/djtsa" target="_blank" rel="noopener noreferrer">
+            <Image className={indexPageContainerSingleSquare} alt="Dying Just To Stay Alive Album Cover" src="/images/releases/DJSTA final -352kb.webp" placeholder='blur' blurDataURL={indexBlurrePhoto} width={500} height={500} priority layout="responsive"></Image>
           </a>
         </div>
         <div className={homePageText}>
           
           <SongTitle></SongTitle>
           {/* <h6>Is Out Now!</h6> */}
-          <h6>Releasing on <span className={noWrap}>10-25-24!</span></h6>
-          <a href="https://hypeddit.com/poromusic/moonlight" target="_blank" rel="noopener noreferrer">
-            {/* <h4 className={presave}>Click To Listen!</h4> */}
-            <h4 className={presave}>Presave Now!</h4>
+          <h6>Available on <span className={noWrap}>11-15-24!</span></h6>
+          <a href="https://hypeddit.com/poromusic/djtsa" target="_blank" rel="noopener noreferrer">
+            <h4 className={presave}>Click To Listen!</h4>
+            {/* <h4 className={presave}>Presave Now!</h4> */}
           </a>
 
           {/* <h1>Dance <span className={noWrap}>With Me</span></h1> */}

@@ -74,7 +74,7 @@
             }
 
             h1 {
-                font-size: 112px;
+                font-size: 96px;
                 margin: 0;
                 padding: 24px 0 0 0;
                 color: $homePageText-color1;
@@ -143,6 +143,7 @@
                 box-sizing: border-box;
                 max-width: 400px;
                 min-width: 50px;
+                z-index: 10;
 
                 @media (min-width: 768px) and (max-width: 980px) {
                     font-size: 36px;

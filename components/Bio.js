@@ -28,9 +28,8 @@ export default function Bio() {
                 him to explore new sounds and reach new audiences while keeping the 
                 project’s identity fresh.</p>
 
-            <p>Now, with new music on the horizon, Poro is set to release the 
-                single &quot;Dance With Me&quot; on September 13th, marking the 
-                beginning of an exciting new chapter in Mark’s ever-evolving musical journey.</p>
+            <p>Amidst creating remisxes, Poro has is currently releasing singles, marking the 
+                beginning of an exciting new chapter in his musical journey.</p>
         </div >
     );
 }

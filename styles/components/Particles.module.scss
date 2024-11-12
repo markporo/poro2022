@@ -1,0 +1,57 @@
+@function random-range($min, $max) {
+    @return ($min * 100 + random(($max - $min) * 100)) / 100;
+  }
+  
+  .particleContainer {
+    position: fixed; /* Ensures the particles stay in the background */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2; /* Keeps the particles behind other elements */
+    pointer-events: none; /* Ensures particles don't block interaction with other elements */
+  }
+  
+  .particle {
+    position: absolute;
+    background-color: #69A389; /* Default color */
+    animation-duration: random-range(10s, 30s); /* Faster movement */
+    animation-iteration-count: infinite;
+    z-index: -1; /* Ensures particles are in the background */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  // Colors array for random assignment
+  $particle-colors: #69A389, #F4A6AD, #8ED5B4, #B09DBD, #E0BA74, #B4FEE1, #D555AF;
+  
+  .particle:nth-child(odd) {
+    width: random-range(10px, 50px); 
+    height: random-range(5px, 20px); 
+    border-radius: random-range(10%, 50%);
+    background-color: nth($particle-colors, random(7)); // Assign a random color from the array
+  }
+  
+  .particle:nth-child(even) {
+    width: random-range(10px, 50px);
+    height: random-range(10px, 50px);
+    border-radius: random-range(10%, 50%);
+    background-color: nth($particle-colors, random(7)); // Assign a random color from the array
+  }
+  
+  // Animations for each particle
+  @for $i from 1 through 50 {
+    .particle:nth-child(#{$i}) {
+      opacity: random-range(0.1, 1);
+      animation-name: particle-#{$i};
+      animation-delay: random-range(-5s, 0s); /* Random start time */
+      transform: translate3d(random-range(0vw, 100vw), random-range(0vh, 100vh), 0);
+    }
+  
+    @keyframes particle-#{$i} {
+      100% {
+        transform: translate3d(random-range(0vw, 100vw), random-range(0vh, 100vh), 0);
+        transform: scale(random-range(0.5, 1.5));
+      }
+    }
+  }
+  

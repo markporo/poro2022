@@ -3,16 +3,19 @@ import BottomNav from './BottomNav'
 import styles from '../styles/Layout.module.scss'
 import Meta from './Meta'
 import CursiveLink from './CursiveLink'
+//import Particles from './Particles'
 
 
 const Layout = ({ children, title, description, additionalMeta, keywords }) => {
-    return ( 
+    return (
         <div className={styles.container}>
-            <Meta title={title} description={description} keywords ={keywords} additionalMeta={additionalMeta} />
+            <Meta title={title} description={description} keywords={keywords} additionalMeta={additionalMeta} />
             <TopNav></TopNav>
+            
             <main className={styles.main}>
                 {children}
             </main>
+            
             <CursiveLink></CursiveLink>
             <BottomNav className={styles.navText}></BottomNav>
         </div>

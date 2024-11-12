@@ -20,22 +20,22 @@ export default function info() {
                 <div className={linksBox}>
                     <div className={linksButtons}>
                         <a
-                            href="https://hypeddit.com/poromusic/moonlight"
+                            href="https://hypeddit.com/poromusic/djtsa"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={linksText}
                         >
-                            {`Listen to "Moonlight"!`}
+                            {`Listen to "Dying Just To Stay Alive"`}
                         </a>
                     </div>
                     <div className={linksButtons}>
                         <a
-                            href="https://hypeddit.com/rrmroh"
+                            href="https://open.spotify.com/playlist/1Uk5W1YhZu5YbUA3Iyb0QI?si=2dfb2ca165ef43ff"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={linksText}
                         >
-                            {`Listen to "Dance With Me"!`}
+                            {`Listen to 'This Is Poro' Playlist`}
                         </a>
                     </div>
                     <div className={linksButtons}>
@@ -45,7 +45,7 @@ export default function info() {
                             rel="noopener noreferrer"
                             className={linksText}
                         >
-                            {`Poro Remixes (Spotify Playlist)`}
+                            {`Listen to Poro Remixes Playlist`}
                         </a>
                     </div>
                     <div className={linksButtons}>
