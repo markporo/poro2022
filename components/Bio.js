@@ -28,8 +28,15 @@ export default function Bio() {
                 him to explore new sounds and reach new audiences while keeping the 
                 project’s identity fresh.</p>
 
-            <p>Amidst creating remisxes, Poro has is currently releasing singles, marking the 
-                beginning of an exciting new chapter in his musical journey.</p>
+            <p>Since late 2024, Poro has been releasing singles in anticipation of 
+                his upcoming full-length lo-fi indie pop album, where he crafts introspective 
+                soundscapes that weave together hazy melodies and heartfelt lyrics, capturing 
+                the essence of both nostalgia and new beginnings. 
+                {/* Much more is on the horizon for Poro, 
+                as he embarks on this next chapter of his musical journey */}
+                {/* This album marks the beginning of an 
+                exciting new chapter in his musical evolution. */}
+                </p>
         </div >
     );
 }

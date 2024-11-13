@@ -35,9 +35,9 @@ $primary-darkish: #6c6a82;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    // max-width: 1000px;
     overflow: hidden;
     white-space: nowrap;
+    padding-bottom: 5px;
     /* Prevent wrapping */
 
     // this font-size/ letter spacing relationship works for 'Music'
@@ -76,6 +76,7 @@ $primary-darkish: #6c6a82;
     width: 100%;
     overflow: hidden;
     white-space: nowrap;
+    padding-top: 10px;
 
     h1 {
         margin: 5px 0;

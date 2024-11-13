@@ -3,17 +3,19 @@ import Head from 'next/head'
 import Image from "next/legacy/image"
 import SongTitle from '../components/SongReleaseTitle';
 import { indexContentContainer, indexPageContainerSingleSquare, pageContainer, homePageImage, homePageText, noWrap, presave, color3, color2, color1 } from '../styles/index.module.scss';
-import { indexBlurrePhoto } from '../lib/base-64.js';
-import { textBlurb, aboutTitle } from '../styles/pages.module.scss';
+import releases  from '../data/releases.js';
+//import { textBlurb, aboutTitle } from '../styles/pages.module.scss';
 //import Particles from '../components/Particles.js';
 
+//blurDataURL={releases[0].blurDataURL}
+const mostRecentRelease = releases[0];
 
 export default function Home({ articles }) {
   return (
     <div className={pageContainer}>
       <Head>
         <title>Poro</title>
-        <meta name='keywords' content='poro, Cleveland OHIO, poromusic, dance with me, moonlight, porostosky' />
+        <meta name='keywords' content='poro, Cleveland Ohio, poromusic, dance with me, moonlight, porostosky' />
       </Head>
       <div className={indexContentContainer}>
       {/* <Particles /> */}
@@ -21,8 +23,8 @@ export default function Home({ articles }) {
           <h1 className={aboutTitle}>News</h1>
         </div> */}
         <div className={homePageImage}>
-          <a href="https://hypeddit.com/poromusic/djtsa" target="_blank" rel="noopener noreferrer">
-            <Image className={indexPageContainerSingleSquare} alt="Dying Just To Stay Alive Album Cover" src="/images/releases/DJSTA final -352kb.webp" placeholder='blur' blurDataURL={indexBlurrePhoto} width={500} height={500} priority layout="responsive"></Image>
+          <a href={mostRecentRelease.link} target="_blank" rel="noopener noreferrer">
+            <Image className={indexPageContainerSingleSquare} alt={mostRecentRelease.alt} src={mostRecentRelease.src} placeholder='blur' blurDataURL={mostRecentRelease.blurPhoto}  width={500} height={500} priority layout="responsive"></Image>
           </a>
         </div>
         <div className={homePageText}>
@@ -30,7 +32,7 @@ export default function Home({ articles }) {
           <SongTitle></SongTitle>
           {/* <h6>Is Out Now!</h6> */}
           <h6>Available on <span className={noWrap}>11-15-24!</span></h6>
-          <a href="https://hypeddit.com/poromusic/djtsa" target="_blank" rel="noopener noreferrer">
+          <a href={mostRecentRelease.link} target="_blank" rel="noopener noreferrer">
             <h4 className={presave}>Click To Listen!</h4>
             {/* <h4 className={presave}>Presave Now!</h4> */}
           </a>
