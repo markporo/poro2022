@@ -20,12 +20,12 @@ export default function info() {
                 <div className={linksBox}>
                     <div className={linksButtons}>
                         <a
-                            href="https://hypeddit.com/poromusic/djtsa"
+                            href="https://hypeddit.com/7vi4hn"
                             target="_blank"
                             rel="noopener noreferrer"
                             className={linksText}
                         >
-                            {`Listen to "Dying Just To Stay Alive"`}
+                            {`Listen to the new EP "Let Me Love You"`}
                         </a>
                     </div>
                     <div className={linksButtons}>

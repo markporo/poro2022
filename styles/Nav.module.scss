@@ -23,14 +23,15 @@
   @include selectedPage ($poro-red-50-percent);
 }
 
-.navLeft:hover,
-.navRight:hover,
-.navBottomLeft:hover,
-.navBottomMiddle:hover,
-.navBottomRight:hover {
-  @include hoverNavLink;
-  @include retroShake;
-}
+// THIS WAS THE RETRO SHAKE HOVER ANIMATION FOR NAVS
+// .navLeft:hover,
+// .navRight:hover,
+// .navBottomLeft:hover,
+// .navBottomMiddle:hover,
+// .navBottomRight:hover {
+//   @include hoverNavLink;
+//   @include retroShake;
+// }
 
 .topNavs {
   @include bothBotAndTopNavs;
@@ -139,6 +140,12 @@
     1px -2px 3px rgba(255, 255, 255, 0.7);
 }
 
+// Making Navs same hover effect as logo...
+.navLeft:hover,
+.navRight:hover,
+.navBottomLeft:hover,
+.navBottomMiddle:hover,
+.navBottomRight:hover,
 .header:hover {
   border: 1.5px solid grey;
   // @include transitionAnimation;

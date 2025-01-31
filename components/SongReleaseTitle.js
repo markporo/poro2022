@@ -8,7 +8,7 @@ const colors = [
     "#d071717e"  // red
 ];
 
-const text = "Dying Just To Stay Alive";
+const text = "Let Me Love You [EP]";
 const coloredText = text.split("").map((eachLetter, i) => (
     <span key={i} style={{ color: colors[i % colors.length] }}>
         {eachLetter}

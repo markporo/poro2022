@@ -30,8 +30,8 @@ export default function Home({ articles }) {
         <div className={homePageText}>
           
           <SongTitle></SongTitle>
-          {/* <h6>Is Out Now!</h6> */}
-          <h6>Available on <span className={noWrap}>11-15-24!</span></h6>
+          <h6>Is Out Now!</h6>
+          {/* <h6>Available on <span className={noWrap}></span></h6> */}
           <a href={mostRecentRelease.link} target="_blank" rel="noopener noreferrer">
             <h4 className={presave}>Click To Listen!</h4>
             {/* <h4 className={presave}>Presave Now!</h4> */}
